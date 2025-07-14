@@ -1,0 +1,22 @@
+name: Josh Noll
+links:
+  website: https://joshrnoll.com
+  linkedin: https://linkedin.com/lin/joshrnoll
+  github: https://github.com/joshrnoll
+summary: This is my summary
+certifications:
+  - CISSsP
+  - CCNA
+  - CompTIA stuff
+projects:
+  - title: My Cloud Resume
+    link: a link goes here
+    content: Explanation of my awesome project
+experience:
+  - title: Zebra Therapist
+    date: February 1899 - Present
+    accomplishments:
+      - My super awesome accomplishment #1
+      - My super awesome accomplishment #2
+      - My super awesome accomplishment #3
+      - My super awesome accomplishment #4

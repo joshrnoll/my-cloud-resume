@@ -1,0 +1,10 @@
+{{ summary }}
+{% for item in certifications %}
+  {{ item }}
+{% endfor %}
+{% for item in projects %}
+  {{ item.title }}
+  {{ item.link }}
+  {{ item.content }}
+{% endfor %}
+{{ experience }}
