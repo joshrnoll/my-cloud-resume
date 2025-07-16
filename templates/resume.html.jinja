@@ -11,13 +11,11 @@
   <header>
     <section id="header">
       <h1>{{ name }}</h1>
-      <p>
         {% for key, value in links.items() %}
         <button type="button" onclick="window.location.href='{{ value }}';">
           {{ key }}
         </button>
         {% endfor %}
-      </p>
     </section>
   </header>
 
@@ -66,7 +64,7 @@
         <h4>{{ item.date }}</h4>
         <ul>
           {% for accomplishment in item.accomplishments %}
-          <li>{{ accomplishment }}</li>
+          <li class="accomplishments">{{ accomplishment }}</li>
           {% endfor %}
         </ul>
       </li>
@@ -87,7 +85,7 @@
   </section>
 
   <footer>
-    <p>Coded from scratch by {{ name }}</p>
+    <p>© 2025 - Coded from scratch by {{ name }}</p>
   </footer>
 </body>
 </html>
