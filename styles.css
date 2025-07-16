@@ -109,9 +109,11 @@ header button:hover {
 
 footer {
   background-color: var(--background-color);
-  font-size: xx-small;
+  font-size: 10pt;
   position: fixed;
   bottom: 0;
+  text-align: center;
+  width: 100%
 }
 
 /* Styling for small screens */
