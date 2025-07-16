@@ -3,12 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="scripts.js"></script>
+  <title>Josh Noll's Resume</title>
 </head>
 <body>
-  <section>
-    <h1>{{ name }}</h1>
-    {% for item in links %}
+  <header>
+    <section id="header">
+      <h1>{{ name }}</h1>
+      <p>
+        {% for key, value in links.items() %}
+        <button type="button" onclick="window.location.href='{{ value }}';">
+          {{ key }}
+        </button>
+        {% endfor %}
+      </p>
+    </section>
+  </header>
+
+  <section id="summary">
+    <h2>Summary</h2>
+    <p>{{ summary }}</p>
   </section>
+
+  <section id="technologies">
+    <h2>Technologies</h2>
+    <p>
+      {%- for item in technologies | join(' | ') -%}
+        {{ item }}
+      {%- endfor -%}
+    </p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      {% for item in certifications %}
+      <li>
+        <a href={{ item.link }}>{{ item.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Technical Projects</h2>
+    <ul>
+      {% for item in projects %}
+      <li>
+        <a href={{ item.link }}>{{ item.title }}</a> <span>| {{ item.content }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      {% for item in experience %}
+      <li>
+        <h3>{{ item.title }}</h3>
+        <h4>{{ item.date }}</h4>
+        <ul>
+          {% for accomplishment in item.accomplishments %}
+          <li>{{ accomplishment }}</li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      {% for item in education %}
+      <li>
+        <h3>{{ item.title }}</h3>
+        <h4>{{ item.school }}</h4>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <footer>
+    <p>Coded from scratch by {{ name }}</p>
+  </footer>
 </body>
 </html>

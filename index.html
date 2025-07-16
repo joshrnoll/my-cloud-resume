@@ -1,134 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Josh's Cloud Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="scripts.js"></script>
+  <title>Josh Noll's Resume</title>
 </head>
-
-<body style="font-family: 'Roboto', sans-serif; margin: 20px; line-height: 1.6;">
-
-    <div class ="row">
-        <div class="column">
-        <h1>Josh Noll</h1>
-        <hr>
-        <nav>
-            <h2>
-                <a href="https://joshrnoll.com">My Website</a>
-            </h2>
-            <h2>
-                <a href="https://github.com/joshrnoll">GitHub Profile</a>
-            </h2>
-            <h2>
-                <a href="https://www.linkedin.com/in/joshrnoll/">LinkedIn Profile</a>
-            </h2>
-        </nav>
-
-        <h2>Summary</h2>
-            <p>
-                Passionate, results-driven problem solver with expertise in cloud infrastructure (Azure), automation (Ansible, PowerShell, Bash), containerization (Docker, Kubernetes) and system integration. Proven ability to translate technical requirements into customer-centric solutions. Military leader with a history of driving digital transformation, delivering stakeholder-aligned outcomes, and communicating value to both technical and executive audiences.
-            </p>
-
-        <h2>Certifications</h2>
-            <ul>
-                <li>ISC2 Certified Information Systems Security Professional (CISSP)</li>
-                <li>Cisco Certified Networking Associate (CCNA)</li>
-                <li>Microsoft Certified: Azure Administrator Associate (Az-104)</li>
-                <li>Microsoft Certified: Azure Fundamentals (Az-900)</li>
-                <li>CompTIA Project+, Network+, Security+, SecurityX</li>
-            </ul>
-
-        <h2>Technical Projects</h2>
-            <ul>
-          <li>
-              <h3>
-                <a href="https://reusume.joshrnoll.com">Cloud Resume Challenge</a>
-              </h3>
-              <p>
-                Developed a fully functional, serverless resume website using Azure Functions, Azure Blob Storage, and Azure CDN. Demonstrated ability to build and deploy a cloud-native solution with minimal infrastructure management.
-              </p>
-          </li>
-
-          <li>
-              <h3>
-                <a href="https://joshrnoll.com">Personal Website</a>
-              </h3>
-              <p>
-                Designed and deployed a branded, static website with custom domain using Azure CDN and Cloudflare, demonstrating ability to independently develop and deliver cloud-hosted solutions.
-              </p>
-          </li>
-
-          <li>
-              <h3>
-                <a href="https://github.com/joshrnoll/homelab-as-code">Homelab as Code</a>
-              </h3>
-              <p>
-                Built a CD pipeline for homelab services, rapidly testing and deploying services to Kubernetes on Talos Linux in support of 5+ active users. Demonstrated ability to build and document Infrastructure as Code solutions.
-              </p>
-          </li>
-
-          <li>
-              <h3>
-                <a href="https://github.com/joshrnoll/ansible-collection-homelab">Ansible Collection for Homelab</a>
-              </h3>
-              <p>
-                Published a suite of modular Ansible roles to Ansible Galaxy, enabling repeatable server baselines and deployment of Docker containers onto a Tailscale network. Demonstrated ability to deliver reusable, community-facing infrastructure solutions.
-              </p>
-          </li>
-
-          <li>
-              <h3>
-                <a href="https://github.com/joshrnoll/ansible-playbook-traefik-tailscale">Traefik Install Playbook</a>
-              </h3>
-              <p>
-                Delivered a reusable, modular Ansible solution to orchestrate Traefik reverse proxy across multiple environments—showcasing ability to build and communicate repeatable deployment strategies.
-              </p>
-          </li>
-
-          <li>
-              <h3>
-                <a href="https://github.com/joshrnoll/BAT">BAT (Bastogne Automation Tool)</a>
-              </h3>
-              <p>
-                Delivered a scalable, repeatable solution that improved service desk efficiency and user onboarding experience via a custom PowerShell module. Reduced the time to close user creation tickets by over 50%.
-              </p>
-          </li>
-            </ul>
-        </div>
+<body>
+  <header>
+    <section id="header">
+      <h1>Josh Noll</h1>
+      <p>
         
-        <div class="column">
-            <h2>Experience (US Army)</h2>
-            <hr></hr>
-            <h3>Systems Engineer <small>| January 2021 - Present</small></h3>
-                <ul>
-                    <li>Identified gaps in the visibility and accessibility of over 100TB of unstructured data, limiting leadership's ability to make swift decisions.</li>
-                    <li>In collaborating with cross-functional teams, enhanced stakeholder insight by developing and presenting an AI-powered search solution using Azure AI Search, reducing search time by approximately 25%.</li>
-                    <li>Improved accessibility of over 22TB of data, shortening the time required for stakeholder decision-making.</li>
-                    <li>Recognized a 30% upward trend in cybersecurity violations across the organization due to a lack of policy; briefing C-suite executives on the data.</li>
-                    <li>Authored and successfully championed an enterprise cybersecurity policy by aligning technical controls with business priorities, reducing cybersecurity violations by over 75%.</li>
-                    <li>Designed and presented a network and systems architecture to C-suite stakeholders, resulting in appropriate deployment of over 40+ virtual machines across 13 on-premises servers.</li>
-                </ul>
+        <button type="button" onclick="window.location.href='https://joshrnoll.com';">
+          website
+        </button>
+        
+        <button type="button" onclick="window.location.href='https://linkedin.com/in/joshrnoll';">
+          linkedin
+        </button>
+        
+        <button type="button" onclick="window.location.href='https://github.com/joshrnoll';">
+          github
+        </button>
+        
+      </p>
+    </section>
+  </header>
 
-            <h3>Executive Assistant <small>| February 2020 - January 2021</small></h3>
-                <ul>
-                    <li>Streamlined executive schedules by identifying and resolving conflicts, improving alignment and enabling the delivery of 3 strategic plans, including the US Army Arctic Strategy, within established deadlines.</li>
-                    <li>Facilitated the alignment of 30+ stakeholders across 5 departments, ensuring the successful delivery of strategic objectives within established timelines.</li>
-                </ul>
+  <section id="summary">
+    <h2>Summary</h2>
+    <p>Passionate, results-driven problem solver with expertise in
+cloud infrastructure, automation, containerization and
+system integration. Proven ability to translate technical
+requirements into customer-centric solutions. Military leader
+with a history of driving digital transformation, delivering
+stakeholder-aligned outcomes, and communicating value to
+both technical and executive audiences.
+</p>
+  </section>
 
-            <h3>Platoon Leader <small>| March 2019 - February 2020</small></h3>
-                <ul>
-                    <li>Led a 25-person team in the successful execution of a $25M
-                        training event, integrating many disparate and complex communications systems. Ensured mission success and personnell safety.</li>
-                </ul>
+  <section id="technologies">
+    <h2>Technologies</h2>
+    <p>Azure | AWS | Linux | Ubuntu | Fedora | PowerShell | Bash | Ansible | Python | Docker | Kubernetes | VMWare | Proxmox | Wireguard | Tailscale | Nginx | Traefik</p>
+  </section>
 
-        <h2>Education</h2>
-            Webster University, M.A. Information Technology Management, May 2021
-            <br></br>
-            US Army Cyber Center of Excellence, Information Systems Engineering Course, October 2021
-            <br></br>
-            University of Wisconsin – Eau Claire, B.A. German, May 2017
-        </div>
-    </div>
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      
+      <li>
+        <a href=https://www.credly.com/badges/4df1206d-dc14-4302-83f4-cc5f8e76e2dc/public_url>Certified Information Systems Security Professional (CISSP)</a>
+      </li>
+      
+      <li>
+        <a href=https://www.credly.com/badges/218f2074-76ba-4d60-b0d5-5bc83c515052/public_url>Cisco Certified Networking Associate (CCNA)</a>
+      </li>
+      
+      <li>
+        <a href=https://learn.microsoft.com/en-us/users/joshrnoll/credentials/A419160A7DC41331?ref=https%3A%2F%2Fjoshrnoll.com%2F>Microsoft Azure Administrator Associate (Az-104)</a>
+      </li>
+      
+      <li>
+        <a href=https://learn.microsoft.com/api/credentials/share/en-us/joshrnoll/B91E76B27D0D2605?sharingId=236C17A9E269164>Microsoft Azure Fundamentals (Az-900)</a>
+      </li>
+      
+      <li>
+        <a href=https://www.credly.com/badges/ba45cd0c-fe71-4c6f-bfbf-9b8acdeeff9a/public_url>ComptTIA SecurityX</a>
+      </li>
+      
+      <li>
+        <a href=https://www.credly.com/badges/76550d7d-a270-421c-8436-b0123897fdf8/public_url>CompTIA Security+</a>
+      </li>
+      
+      <li>
+        <a href=https://www.credly.com/badges/cf3b9100-9b51-488b-84d5-4beb661bee83/public_url>CompTIA Network+</a>
+      </li>
+      
+      <li>
+        <a href=https://www.credly.com/badges/e5ef6d2e-bedd-48c2-a1d0-7b750d418908/public_url>CompTIA Project+</a>
+      </li>
+      
+      <li>
+        <a href=https://www.credly.com/badges/852e9b0a-75e0-480a-bcdd-bf8bd96dbb8f/public_url>AWS Cloud Practitioner (Expired - June 2024)</a>
+      </li>
+      
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Technical Projects</h2>
+    <ul>
+      
+      <li>
+        <a href=https://resume.joshrnoll.com>My Cloud Resume</a> <span>| Designed and developed a dynamic personal resume website from scratch
+using HTML, CSS, and JavaScript, showcasing technical skills and
+professional experience. Automated deployment to cloud storage account using
+GitHub actions, displaying hands-on experience with CI/CD concepts and tooling.
+</span>
+      </li>
+      
+      <li>
+        <a href=https://github.com/joshrnoll/homelab-as-code>Homelab as Code</a> <span>| Built a CD pipeline for homelab services,
+rapidly testing and deploying services to Kubernetes on Talos
+Linux in support of multiple active users. Demonstrated
+ability to build and document Infrastructure as Code
+solutions.
+</span>
+      </li>
+      
+      <li>
+        <a href=https://github.com/joshrnoll/ansible-collection-homelab>Homelab Ansible Collection</a> <span>| Published a suite of modular
+Ansible roles to Ansible Galaxy, enabling repeatable server
+baselines and deployment of Docker containers onto a
+Tailscale network. Demonstrated ability to deliver reusable,
+community-facing infrastructure solutions.
+</span>
+      </li>
+      
+      <li>
+        <a href=https://github.com/joshrnoll/ansible-playbook-traefik-tailscale>Traefik Install Playbook</a> <span>| Delivered a reusable, modular
+Ansible solution to orchestrate Traefik reverse proxy across
+multiple environments, showcasing ability to build and
+communicate repeatable deployment strategies.
+</span>
+      </li>
+      
+      <li>
+        <a href=https://github.com/joshrnoll/BAT>Bastogne Automation Tool</a> <span>| Delivered a scalable, repeatable
+solution that improved service desk efficiency and user
+onboarding experience via a custom PowerShell module.
+</span>
+      </li>
+      
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      
+      <li>
+        <h3>Data and Information Systems Engineer</h3>
+        <h4>January 2021 - Present</h4>
+        <ul>
+          
+          <li>Orchestrated and delivered an AI-powered search solution using Azure AI Search in collaboration with cross-functional teams, improving accessibility of over 22TB of data and shortening stakeholder decision-making time by up to 15%.</li>
+          
+          <li>Developed and drove adoption of a custom PowerShell module for programmatic user account auditing and management, doubling the speed of service desk ticket closures.</li>
+          
+          <li>Recognized upward trend in cybersecurity violations across the organization due to a lack of policy, presenting both the issue and recommendations to C-suite leadership in 3 monthly board meetings.</li>
+          
+          <li>Authored and successfully delivered an enterprise cybersecurity policy by aligning technical controls with business priorities, delivering C-suite buy-in and reducing violations by over 75%.</li>
+          
+          <li>Championed Windows server upgrades by advising leadership on risk and urgency, resulting in C-suite approval and reduced vulnerabilities on 34+ systems</li>
+          
+          <li>Designed and presented a tactical network and systems architecture to 5+ C-suite stakeholders, enabling buy-in for a major training event supporting over 50 end users and directly aligning technical innovation with key business objectives.</li>
+          
+          <li>Directed planning and implementation of a robust off-site network connection, advising key stakeholders and delivering reliable connectivity to over 50 users under challenging operational conditions.</li>
+          
+        </ul>
+      </li>
+      
+      <li>
+        <h3>Executive Assistant</h3>
+        <h4>February 2020 - January 2021</h4>
+        <ul>
+          
+          <li>Led the successful alignment between C-suite leadership and technical teams in executing critical strategic initiatives, including the U.S. Army Arctic Strategy.</li>
+          
+        </ul>
+      </li>
+      
+      <li>
+        <h3>Platoon leader</h3>
+        <h4>March 2019 - February 2020</h4>
+        <ul>
+          
+          <li>Successfully led a team of 25 through a demanding training and validation process under high-stress conditions, achieving operational readiness. Demonstrated ability to guide cross-functional teams and manage mission-critical projects in a dynamic, high-stakes environment.</li>
+          
+          <li>Led deployment and management of secure communications equipment in dynamic environments, successfully supporting multiple operational and training missions in high stress environments.</li>
+          
+        </ul>
+      </li>
+      
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      
+      <li>
+        <h3>M.A. in Information Technology Management</h3>
+        <h4>Webster University</h4>
+      </li>
+      
+      <li>
+        <h3>Graduate of US Army Information Systems Engineering Course</h3>
+        <h4>US Army Cyber Center of Excellence (CCOE)</h4>
+      </li>
+      
+      <li>
+        <h3>B.A. in German - Liberal Arts</h3>
+        <h4>University of Wisconsin - Eau Claire</h4>
+      </li>
+      
+    </ul>
+  </section>
+
+  <footer>
+    <p>Coded from scratch by Josh Noll</p>
+  </footer>
 </body>
 </html>

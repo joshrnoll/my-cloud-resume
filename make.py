@@ -9,5 +9,5 @@ env = Environment(loader = FileSystemLoader('./templates'))
 template = env.get_template('resume.html.jinja')
 output = template.render(values)
 
-with open('./resume.html', 'w') as f:
+with open('./index.html', 'w') as f:
     f.write(output)
