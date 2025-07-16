@@ -17,9 +17,19 @@ function getElementsWithNoChildren(arrayOfElements){
   return elementsWithNoChildren;
 }
 
-let errthang = document.querySelectorAll("*");
-let elementsWithNoChildren = getElementsWithNoChildren(errthang);
+let allHeaders = document.querySelectorAll("h1, h2, h3, h4")
+let allBodyElements = document.querySelectorAll("a, span, p")
+let allAccomplishments = document.querySelectorAll(".accomplishments")
 
-for (item of elementsWithNoChildren){
-  typeWriter(item, 15)
+
+for (item of allHeaders){
+  typeWriter(item, 75)
+}
+
+for (item of allBodyElements){
+  typeWriter(item, 5)
+}
+
+for (item of allAccomplishments){
+  typeWriter(item, 5)
 }
