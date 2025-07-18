@@ -7,9 +7,10 @@ function typeWriter(elementToType, speedInMilliseconds){
   }
 }
 
-function getElementsWithNoChildren(arrayOfElements){
+function getElementsWithNoChildren(){
+  let allElements = document.querySelectorAll("*")
   let elementsWithNoChildren = [];
-  for (item of arrayOfElements){
+  for (item of allElements){
     if (item.children.length === 0){
       elementsWithNoChildren.push(item);
     }
