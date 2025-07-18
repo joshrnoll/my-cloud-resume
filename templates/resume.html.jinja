@@ -11,9 +11,9 @@
   <header>
     <section id="header">
       <h1>{{ name }}</h1>
-        {% for key, value in links.items() %}
-        <button type="button" onclick="window.location.href='{{ value }}';">
-          {{ key }}
+        {% for item in links %}
+        <button type="button" onclick="window.location.href='{{ item.url }}';">
+          {{ item.name }}
         </button>
         {% endfor %}
     </section>

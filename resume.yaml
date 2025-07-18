@@ -1,8 +1,11 @@
 name: Josh Noll
 links:
-  website: https://joshrnoll.com
-  linkedin: https://linkedin.com/in/joshrnoll
-  github: https://github.com/joshrnoll
+  - name: My website
+    url: https://joshrnoll.com
+  - name: My LinkedIn
+    url: https://linkedin.com/in/joshrnoll
+  - name: My GitHub
+    url: https://github.com/joshrnoll
 summary:  |
   Passionate, results-driven problem solver with expertise in
   cloud infrastructure, automation, containerization and
