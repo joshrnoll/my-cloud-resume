@@ -1,0 +1,16 @@
+name: Deploy Resume to Azure Storage Account
+on:
+  push:
+    branches:
+      - gitea-actions
+
+jobs:
+  Build and Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Activate python venv and run make.py
+        run: source venv/bin/activate && python make.py
+      - name: Sync files to Azure storage account
+        run: azcopy sync "./src" "https://${{ secret.endpoint }}.blob.core.windows.net/%24web?${{ secret.sas_token }}" --recursive --delete-destination=true
