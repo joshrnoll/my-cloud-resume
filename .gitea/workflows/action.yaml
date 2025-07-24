@@ -10,7 +10,11 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - name: Activate python venv and run make.py
-        run: source venv/bin/activate && python make.py
+      - name: Set up python venv and build site
+        run: |
+          python -m venv ./venv
+          source ./venv/bin/activate
+          pip install -r requirements.txt
+          python make.py
       - name: Sync files to Azure storage account
         run: azcopy sync "./src" "https://${{ secret.endpoint }}.blob.core.windows.net/%24web?${{ secret.sas_token }}" --recursive --delete-destination=true
