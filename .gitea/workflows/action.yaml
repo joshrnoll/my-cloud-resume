@@ -22,6 +22,5 @@ jobs:
           python make.py
       - name: Sync files to Azure storage account
         env:
-          - ENDPOINT: ${{ secrets.endpoint }}
-          - SAS_TOKEN: ${{ secrets.sas_token }}
-        run: azcopy_v10 sync "./src" "https://$ENDPOINT.blob.core.windows.net/%24web?$SAS_TOKEN" --recursive --delete-destination=true
+          - ENDPOINT: ${{ secrets.endpoint_sas_url }}
+        run: azcopy_v10 sync "./src" "$ENDPOINT" --recursive --delete-destination=true
