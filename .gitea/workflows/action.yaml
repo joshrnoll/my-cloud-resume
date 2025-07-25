@@ -21,6 +21,4 @@ jobs:
           pip install -r requirements.txt
           python make.py
       - name: Sync files to Azure storage account
-        env:
-          - ENDPOINT_SAS_URL: ${{ secrets.endpoint_sas_url }}
-        run: azcopy_v10 sync "./src" "$ENDPOINT_SAS_URL" --recursive --delete-destination=true --from-to LocalBlob
+        run: azcopy_v10 sync "./src" "${{ secrets.endpoint_sas_url }}" --recursive --delete-destination=true --from-to LocalBlob
