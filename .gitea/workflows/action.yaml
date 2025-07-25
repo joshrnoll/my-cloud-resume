@@ -23,4 +23,4 @@ jobs:
       - name: Sync files to Azure storage account
         env:
           - ENDPOINT: ${{ secrets.endpoint_sas_url }}
-        run: azcopy_v10 sync "./src" "$ENDPOINT" --recursive --delete-destination=true
+        run: azcopy_v10 sync "./src" "$ENDPOINT" --recursive --delete-destination=true --from-to LocalBlob
