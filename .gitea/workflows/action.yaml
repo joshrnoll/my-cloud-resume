@@ -10,6 +10,10 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
+      - name: Install azcopy
+        uses: kheiakiyama/install-azcopy-action@v1
+        with:
+          version: 'v10'
       - name: Set up python venv and build site
         run: |
           python -m venv ./venv
@@ -20,4 +24,4 @@ jobs:
         env:
           - ENDPOINT: ${{ secrets.endpoint }}
           - SAS_TOKEN: ${{ secrets.sas_token }}
-        run: azcopy sync "./src" "https://$ENDPOINT.blob.core.windows.net/%24web?$SAS_TOKEN" --recursive --delete-destination=true
+        run: azcopy_v10 sync "./src" "https://$ENDPOINT.blob.core.windows.net/%24web?$SAS_TOKEN" --recursive --delete-destination=true
