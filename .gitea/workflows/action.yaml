@@ -22,5 +22,5 @@ jobs:
           python make.py
       - name: Sync files to Azure storage account
         env:
-          - ENDPOINT: ${{ secrets.endpoint_sas_url }}
-        run: azcopy_v10 sync "./src" ${ENDPOINT} --recursive --delete-destination=true --from-to LocalBlob
+          - ENDPOINT_SAS_URL: ${{ secrets.endpoint_sas_url }}
+        run: azcopy_v10 sync "./src" "$ENDPOINT_SAS_URL" --recursive --delete-destination=true --from-to LocalBlob
