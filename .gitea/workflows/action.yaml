@@ -20,4 +20,4 @@ jobs:
         env:
           - ENDPOINT: ${{ secrets.endpoint }}
           - SAS_TOKEN: ${{ secrets.sas_token }}
-        run: azcopy sync "./src" "https://${ ENDPOINT }.blob.core.windows.net/%24web?${ SAS_TOKEN }" --recursive --delete-destination=true
+        run: azcopy sync "./src" "https://$ENDPOINT.blob.core.windows.net/%24web?$SAS_TOKEN" --recursive --delete-destination=true
