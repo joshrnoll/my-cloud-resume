@@ -17,4 +17,7 @@ jobs:
           pip install -r requirements.txt
           python make.py
       - name: Sync files to Azure storage account
-        run: azcopy sync './src' 'https://${{ secret.endpoint }}.blob.core.windows.net/%24web?${{ secret.sas_token }}' --recursive --delete-destination=true
+        env:
+          - ENDPOINT: ${{ secrets.endpoint }}
+          - SAS_TOKEN: ${{ secrets.sas_token }}
+        run: azcopy sync "./src" "https://${ ENDPOINT }.blob.core.windows.net/%24web?${ SAS_TOKEN }" --recursive --delete-destination=true
