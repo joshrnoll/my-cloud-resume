@@ -2,7 +2,7 @@ name: Deploy Resume to Azure Storage Account
 on:
   push:
     branches:
-      - gitea-actions
+      - main
 
 jobs:
   Build and Deploy:
