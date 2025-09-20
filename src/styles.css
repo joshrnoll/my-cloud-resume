@@ -25,24 +25,25 @@ body {
 }
 
 body section {
-  margin: 15px
+  margin: 15px;
+  padding: 5px
 }
 
 body section ul, li{
   margin-top: 15px;
-  list-style-type: none;
+  list-style-type: circle;
 }
 
 a {
   color: var(--link-color)
 }
 
-h1 {
-  font-size: 48pt;
+a:hover {
+  color: var(--accent-color-1)
 }
 
-section {
-  padding: 5px
+h1 {
+  font-size: 48pt;
 }
 
 /* Header */

@@ -1,0 +1,37 @@
+:root {
+  --font-color: rgb(75, 75, 75);
+  --link-color: rgb(60, 60, 255);
+  --background-color: rgb(255, 255, 255);
+}
+
+body {
+  display: inline;
+  text-shadow: none;
+  font-size: 10pt;
+}
+
+a {
+  text-decoration: none;
+}
+
+body section {
+  margin: 5px;
+  padding: 0;
+}
+
+body section ul, li{
+  margin-top: 5px;
+  list-style-type: circle;
+}
+
+h1 {
+  font-size: 24pt;
+}
+
+h2 {
+  font-size: 14pt;
+}
+
+footer {
+  visibility: hidden;
+}

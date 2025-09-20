@@ -27,8 +27,13 @@ technologies:
   - HTML
   - CSS
   - JavaScript
+  - React
+  - Vite
+  - Jest
+  - Tailwind
   - Docker
   - Kubernetes
+  - FluxCD
   - VMWare
   - Proxmox
   - Wireguard
@@ -58,6 +63,10 @@ certifications:
 
 
 projects:
+  - title: Convoy Connect
+    link: https://github.com/joshrnoll/convoy-connect
+    content: |
+      Engineered a full-stack web application that streamlines the vehicle dispatch process by digitizing Preventative Maintenance Checks and Services (PMCS) and automating dispatcher workflows. Shortened vehicle dispatch time from over 3 hours to just a few minutes.
   - title: My Cloud Resume
     link: https://resume.joshrnoll.com
     content: |
@@ -118,6 +127,8 @@ experience:
 
 
 education:
+  - title: Graduate of the Software Development Immersive (SDI) Cohort 31
+    school: Galvanize
   - title: M.A. in Information Technology Management
     school: Webster University
   - title: Graduate of US Army Information Systems Engineering Course
