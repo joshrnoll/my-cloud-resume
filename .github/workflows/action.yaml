@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 name: Deploy Resume to Azure Storage Account
 on:
   push:
@@ -13,7 +14,7 @@ jobs:
       - name: Install azcopy
         uses: kheiakiyama/install-azcopy-action@v1
         with:
-          version: 'v10'
+          version: "v10"
       - name: Set up python venv and build site
         run: |
           python -m venv ./venv
@@ -22,3 +23,4 @@ jobs:
           python make.py
       - name: Sync files to Azure storage account
         run: azcopy_v10 sync "./src" "${{ secrets.endpoint_sas_url }}" --recursive --delete-destination=true --from-to LocalBlob
+
