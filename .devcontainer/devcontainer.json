@@ -1,0 +1,10 @@
+{
+  "name": "Cloud Resume",
+  "dockerFile": "Dockerfile",
+  "build": {
+    "context": "..",
+    "options": ["--network=host"]
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  "workspaceFolder": "/workspace"
+}

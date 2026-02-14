@@ -1,9 +1,9 @@
 /* Variables */
 :root {
-  --font-color: rgb(190, 220, 245);
-  --link-color: rgb(150, 150, 255);
-  --accent-color-1: rgb(3, 150, 0);
-  --background-color: rgb(10, 10, 30);
+  --font-color: rgb(192, 202, 245);
+  --link-color: rgb(122, 162, 247);
+  --accent-color-1: rgb(158, 206, 106);
+  --background-color: rgb(26, 27, 38);
   --text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
@@ -18,28 +18,36 @@ body {
   background-color: var(--background-color);
   color: var(--font-color);
   text-shadow: var(--text-shadow);
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header     experience"
+    "summary    experience"
+    "tech       experience"
+    "projects   experience"
+    "certs      experience"
+    "certs      education";
   align-items: start;
 }
 
 body section {
   margin: 15px;
-  padding: 5px
+  padding: 5px;
 }
 
-body section ul, li{
+body section ul,
+li {
   margin-top: 15px;
   list-style-type: circle;
 }
 
 a {
-  color: var(--link-color)
+  color: var(--link-color);
 }
 
 a:hover {
-  color: var(--accent-color-1)
+  color: var(--accent-color-1);
 }
 
 h1 {
@@ -49,7 +57,7 @@ h1 {
 /* Header */
 
 header {
-  order: 0;
+  grid-area: header;
 }
 
 header button {
@@ -72,38 +80,37 @@ header button:hover {
 /* Summary Section */
 
 #summary {
-  order: 2;
+  grid-area: summary;
 }
 
 /* Technologies Section */
 
 #technologies {
-  order: 3;
+  grid-area: tech;
 }
 
 /* Projects Section */
 
 #projects {
-  order: 4;
+  grid-area: projects;
 }
 
 /* Certifications Section */
 
-#certifications{
-  order: 5;
+#certifications {
+  grid-area: certs;
 }
 
 /* Education Section */
 
 #education {
-  order: 5;
+  grid-area: education;
 }
 
 /* Experience Section  */
 
 #experience {
-  order: 1;
-  grid-row: span 6;
+  grid-area: experience;
 }
 
 /* Footer Section  */
@@ -114,41 +121,21 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  width: 100%
+  width: 100%;
 }
 
 /* Styling for small screens */
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1080px) {
   body {
     grid-template-columns: 1fr;
-  }
-
-  header {
-    order: 0;
-  }
-
-  #summary {
-    order: 1;
-  }
-
-  #technologies {
-    order: 2;
-  }
-
-  #certifications {
-    order: 3;
-  }
-
-  #projects {
-    order: 4;
-  }
-
-  #experience {
-    order: 5;
-  }
-
-  #education {
-    order: 6;
+    grid-template-areas:
+      "header"
+      "summary"
+      "tech"
+      "projects"
+      "certs"
+      "experience"
+      "education";
   }
 }

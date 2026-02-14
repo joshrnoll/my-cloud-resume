@@ -11,25 +11,41 @@
 <body>
   <header>
     <section id="header">
-      <h1>{{ name }}</h1>
-        {% for item in links %}
-        <button type="button" onclick="window.location.href='{{ item.url }}';">
-          {{ item.name }}
+      <h1>{{ cv.name }}</h1>
+        <button type="button" onclick="window.location.href='{{ cv.website }}';">
+          My Website
         </button>
+        {% for social in cv.social_networks %}
+        {% if social.network == 'LinkedIn' %}
+        <button type="button" onclick="window.location.href='https://linkedin.com/in/{{ social.username }}';">
+          My LinkedIn
+        </button>
+        {% elif social.network == 'GitHub' %}
+        <button type="button" onclick="window.location.href='https://github.com/{{ social.username }}';">
+          My GitHub
+        </button>
+        {% endif %}
         {% endfor %}
+        <button type="button" onclick="downloadPDF();">
+          View PDF
+        </button>
     </section>
   </header>
 
   <section id="summary">
     <h2>Summary</h2>
-    <p>{{ summary }}</p>
+    <p>
+      {%- for item in cv.sections.summary -%}
+        {{ item }}
+      {%- endfor-%}
+    </p>
   </section>
 
   <section id="technologies">
     <h2>Technologies</h2>
     <p>
-      {%- for item in technologies | join(' | ') -%}
-        {{ item }}
+      {%- for skill in cv.sections.skills -%}
+        {{ skill }}{% if not loop.last %} | {% endif %}
       {%- endfor -%}
     </p>
   </section>
@@ -37,9 +53,9 @@
   <section id="certifications">
     <h2>Certifications</h2>
     <ul>
-      {% for item in certifications %}
+      {% for cert in cv.sections.certifications %}
       <li>
-        <a href={{ item.link }}>{{ item.name }}</a>
+        <strong>{{ cert.label }}:</strong> {{ cert.details | md_link | safe }}
       </li>
       {% endfor %}
     </ul>
@@ -48,9 +64,9 @@
   <section id="projects">
     <h2>Technical Projects</h2>
     <ul>
-      {% for item in projects %}
+      {% for project in cv.sections.projects %}
       <li>
-        <a href={{ item.link }}>{{ item.title }}</a> <span>| {{ item.content }}</span>
+        <strong>{{ project.name | md_link | safe }}</strong> <span>| {{ project.summary }}</span>
       </li>
       {% endfor %}
     </ul>
@@ -58,12 +74,12 @@
 
   <section id="experience">
     <h2>Experience</h2>
-      {% for item in experience %}
-        <h3>{{ item.title }}</h3>
-        <h4>{{ item.date }}</h4>
+      {% for exp in cv.sections.experience %}
+        <h3>{{ exp.position }}</h3>
+        <h4>{{ exp.start_date }} - {{ exp.end_date }}</h4>
         <ul>
-          {% for accomplishment in item.accomplishments %}
-          <li class="accomplishments">{{ accomplishment }}</li>
+          {% for highlight in exp.highlights %}
+          <li class="accomplishments">{{ highlight }}</li>
           {% endfor %}
         </ul>
         <br>
@@ -73,17 +89,17 @@
   <section id="education">
     <h2>Education</h2>
     <ul>
-      {% for item in education %}
+      {% for edu in cv.sections.education %}
       <li>
-        <h3>{{ item.title }}</h3>
-        <h4>{{ item.school }}</h4>
+        <h3>{{ edu.label }}</h3>
+        <h4>{{ edu.details }}</h4>
       </li>
       {% endfor %}
     </ul>
   </section>
 
   <footer>
-    <p>© 2025 - Coded from scratch by {{ name }}</p>
+    <p>© 2025 - Coded from scratch by {{ cv.name }}</p>
   </footer>
 </body>
 </html>
