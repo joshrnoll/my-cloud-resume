@@ -79,6 +79,10 @@ header button:hover {
 
 /* Summary Section */
 
+#pdfview {
+  margin-top: 8px;
+}
+
 #summary {
   grid-area: summary;
 }

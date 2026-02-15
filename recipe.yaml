@@ -1,0 +1,203 @@
+version: "1.0.0"
+title: "Tailor Resume"
+description: "Tailors the resume to a specific job posting or job title by editing resume.yaml using information from the resume and ILM.md"
+
+extensions:
+  - type: builtin
+    name: developer
+  - type: platform
+    name: todo
+
+parameters:
+  - key: job_input
+    input_type: string
+    requirement: required
+    description: "Either a URL to a job posting or a job title/description"
+
+instructions: |
+  You are tasked with tailoring a resume to match a specific job posting or job title.
+
+  The job input provided is: {{ job_input }}
+
+  ## CRITICAL RULES - READ CAREFULLY
+
+  1. **ALL work must be done on a separate git branch** - NEVER work on main
+  2. **ONLY edit the `cv` section** of resume.yaml (lines 2-87)
+  3. **NEVER modify the `design`, `locale`, or `settings` sections** (lines 88-133)
+  4. **NEVER change formatting, spacing, fonts, margins, or any styling**
+  5. **Maintain the RenderCV schema format** exactly as it exists
+  6. **Use ONLY information from the existing resume.yaml and ILM.md** - do not invent accomplishments
+  7. **Keep all content truthful** - only reorder, rephrase, or select relevant existing content
+
+  ## Your Task
+
+  ### Step 0: Create Git Branch
+
+  Before doing anything else, create a new git branch:
+
+  1. Generate a branch name from the job_input in kebab-case format:
+     - If job_input is a URL: Extract the job title from the posting and convert to kebab-case
+     - If job_input is a job title/description: Convert it directly to kebab-case
+     - Examples:
+       - "Senior DevOps Engineer" → "senior-devops-engineer"
+       - "Software Developer - Python" → "software-developer-python"
+       - URL with "Cloud Solutions Architect" → "cloud-solutions-architect"
+     - Limit branch names to 50 characters maximum
+     - Remove special characters, only keep letters, numbers, and hyphens
+
+  2. Create and checkout the new branch:
+     ```bash
+     git checkout -b <branch-name>
+     ```
+
+  3. Verify you're on the new branch:
+     ```bash
+     git branch --show-current
+     ```
+
+  ### Step 1: Analyze the Job Requirements
+
+  If job_input is a URL:
+  - Fetch the job posting content
+  - Extract key requirements, technologies, skills, and responsibilities
+
+  If job_input is a job title/description:
+  - Identify the typical requirements for this role
+  - Determine relevant skills and technologies
+
+  ### Step 2: Review Available Content
+
+  Read these files to understand what content is available:
+  - `resume.yaml` - Current resume content
+  - `ILM.md` - Comprehensive "I Love Me" doc with detailed accomplishments
+
+  ### Step 3: Tailor the Resume
+
+  Edit `resume.yaml` to optimize for the job by:
+
+  **Summary Section:**
+  - Adjust the summary to emphasize relevant skills and experiences
+  - Use keywords from the job posting
+  - Keep it concise (2-3 sentences)
+
+  **Skills Section:**
+  - Reorder skills to put the most relevant ones first
+  - You may add skills from ILM.md that aren't currently listed but are relevant
+  - Keep the comma-separated format
+
+  **Experience Section:**
+  - Reorder highlights within each job to emphasize relevant accomplishments
+  - You may add accomplishments from ILM.md that aren't currently in resume.yaml
+  - Rephrase highlights to use job posting keywords where truthful
+  - Consider removing less relevant highlights if the resume becomes too long
+  - Maintain the RenderCV format with company, position, dates, and highlights
+
+  **Projects Section:**
+  - Reorder projects to feature the most relevant ones first
+  - You may expand project descriptions using details from ILM.md
+  - Emphasize technologies and outcomes relevant to the job
+
+  **Certifications and Education:**
+  - Generally keep these sections as-is unless specific reordering would help
+  - These are factual and harder to tailor
+
+  ### Step 4: Build the Resume
+
+  After editing resume.yaml:
+
+  1. Check if a Python virtual environment exists at `./venv`
+  2. If it doesn't exist, create it: `python -m venv ./venv`
+  3. Activate the venv:
+     - On Linux/Mac: `source ./venv/bin/activate`
+     - On Windows: `.\venv\Scripts\activate`
+  4. Install dependencies: `pip install -r requirements.txt`
+  5. Run the build: `python make.py`
+  6. Verify that both `src/index.html` and `src/resume.pdf` were generated successfully
+
+  ### Step 5: Commit Changes
+
+  After successfully building the resume:
+
+  1. Check the git status to see all changes:
+     ```bash
+     git status
+     ```
+
+  2. Stage the modified files (resume.yaml and generated outputs):
+     ```bash
+     git add resume.yaml src/index.html src/resume.pdf
+     ```
+
+  3. Commit with a descriptive message:
+     ```bash
+     git commit -m "Tailor resume for: <job title from job_input>"
+     ```
+
+  4. Inform the user:
+     - The branch name you created
+     - How to review the changes (`git diff main`)
+     - How to push the branch if they want to (`git push -u origin <branch-name>`)
+     - That they can merge to main when ready, or delete the branch if not needed
+
+  ### Step 6: Summary
+
+  Provide a brief summary of:
+  - The git branch name created
+  - Key changes made to tailor the resume
+  - Which sections were modified and why
+  - Top 3-5 matching points between the resume and job requirements
+  - Next steps for the user (review, push, merge, or delete branch)
+
+  ## Important Notes
+
+  - **Preserve truthfulness**: Only use real accomplishments from resume.yaml and ILM.md
+  - **Maintain schema compliance**: The resume must remain valid per RenderCV schema
+  - **No styling changes**: Do not touch the `design` section or any formatting parameters
+  - **Test the build**: Always run `python make.py` to ensure the changes don't break the build
+  - **Use existing patterns**: Follow the existing writing style and structure in resume.yaml
+
+  ## Example Workflow
+
+  ```bash
+  # 0. Create and checkout new git branch
+  git checkout -b senior-cloud-engineer
+  git branch --show-current
+
+  # 1. Read and analyze the job posting
+  # 2. Review resume.yaml and ILM.md
+  # 3. Edit resume.yaml (only the cv section)
+
+  # 4. Set up and activate venv if needed
+  python -m venv ./venv
+  source ./venv/bin/activate  # or .\venv\Scripts\activate on Windows
+  pip install -r requirements.txt
+
+  # 5. Build the resume
+  python make.py
+
+  # 6. Verify outputs exist
+  ls src/index.html src/resume.pdf
+
+  # 7. Commit the changes
+  git status
+  git add resume.yaml src/index.html src/resume.pdf
+  git commit -m "Tailor resume for: Senior Cloud Engineer"
+
+  # 8. User can now review, push, or merge
+  # git diff main                          # review changes
+  # git push -u origin senior-cloud-engineer  # push to remote
+  # git checkout main && git merge senior-cloud-engineer  # merge when ready
+  ```
+
+  ## Important Reminders
+
+  - **Preserve truthfulness**: Only use real accomplishments from resume.yaml and ILM.md
+  - **Maintain schema compliance**: The resume must remain valid per RenderCV schema
+  - **No styling changes**: Do not touch the `design` section or any formatting parameters
+  - **Test the build**: Always run `python make.py` to ensure the changes don't break the build
+  - **Use existing patterns**: Follow the existing writing style and structure in resume.yaml
+  - **Work on a branch**: ALL changes must be on a dedicated branch, never on main
+  - **Commit your work**: Always commit the changes before finishing
+
+  Remember: You are optimizing the presentation of existing accomplishments, not creating new ones.
+prompt: "Tailor my resume to the following job description and/or job title: {{ job_input }}"

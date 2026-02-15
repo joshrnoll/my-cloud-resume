@@ -54,8 +54,8 @@ cv:
           - Led deployment and management of secure communications equipment in dynamic environments, successfully supporting multiple operational and training missions in high stress environments.
 
     projects:
-      - name: "[Convoy Connect](https://github.com/joshrnoll/convoy-connect)"
-        summary: Engineered a full-stack web application that streamlines the vehicle dispatch process by digitizing Preventative Maintenance Checks and Services (PMCS) and automating dispatcher workflows. Shortened vehicle dispatch time from over 3 hours to just a few minutes.
+      - name: "[Black Relay](https://github.com/joshrnoll/black-relay)"
+        summary: Engineered a backend architecture using JavaScript, Express, MQTT and MongoDB to allow extensible sensor data to be displayed on a web applicaton. Enabled data driven decision making in austere environments.
 
       - name: "[My Cloud Resume](https://resume.joshrnoll.com)"
         summary: Designed and developed a dynamic personal resume website from scratch using HTML, CSS, and JavaScript, showcasing technical skills and professional experience. Automated deployment to cloud storage account using GitHub actions, displaying hands-on experience with CI/CD concepts and tooling.

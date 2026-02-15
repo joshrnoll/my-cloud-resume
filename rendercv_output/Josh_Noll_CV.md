@@ -6,10 +6,10 @@
 
 
 # Summary
-Passionate, results-driven problem solver with expertise in cloud infrastructure, automation, containerization and system integration. Proven ability to translate technical requirements into customer-centric solutions. Military leader with a history of driving digital transformation, delivering stakeholder-aligned outcomes, and communicating value to both technical and executive audiences.
+Highly motivated Software Engineer with a passion for building scalable and robust solutions. Experienced in full-stack development, cloud infrastructure, and automation, with a proven track record of translating complex requirements into efficient, customer-centric software. Military leader accustomed to driving digital transformation and delivering impact through technical innovation.
 
 # Skills
-Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS, JavaScript, TypeScript, React, Vite, NextJS, Jest, Tailwind, Docker, Kubernetes, FluxCD, VMWare, Proxmox, Wireguard, Tailscale, Nginx, Traefik
+Python, JavaScript, TypeScript, React, NextJS, HTML, CSS, Tailwind, SQL, Postgres, Docker, Kubernetes, Ansible, Azure, AWS, Linux, PowerShell, Bash, FluxCD, Git, CI/CD, Agile/Scrum
 
 # Certifications
 **ISC2:** [Certified Information Systems Security Professional (CISSP)](https://www.credly.com/badges/4df1206d-dc14-4302-83f4-cc5f8e76e2dc/public_url)
@@ -25,15 +25,15 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
 *Jan 2021 – present*
 
-- Orchestrated and delivered an AI-powered search solution using Azure AI Search in collaboration with cross-functional teams, improving accessibility of over 22TB of data and shortening stakeholder decision-making time by up to 15%.
+- Developed and drove adoption of a custom PowerShell module for programmatic user account auditing and management, doubling the speed of service desk ticket closures.
 
 - Developed and drove adoption of a custom PowerShell module for programmatic user account auditing and management, doubling the speed of service desk ticket closures.
 
-- Recognized upward trend in cybersecurity violations across the organization due to a lack of policy, presenting both the issue and recommendations to C-suite leadership in 3 monthly board meetings.
+- Orchestrated and delivered an AI-powered search solution using Azure AI Search in collaboration with cross-functional teams, improving accessibility of over 22TB of data and shortening stakeholder decision-making time by up to 15%.
 
 - Authored and successfully delivered an enterprise cybersecurity policy by aligning technical controls with business priorities, delivering C-suite buy-in and reducing violations by over 75%.
 
-- Championed Windows server upgrades by advising leadership on risk and urgency, resulting in C-suite approval and reduced vulnerabilities on 34+ systems
+- Championed Windows server upgrades, advising leadership on risk and urgency, resulting in C-suite approval and reduced vulnerabilities on 34+ systems.
 
 - Designed and presented a tactical network and systems architecture to 5+ C-suite stakeholders, enabling buy-in for a major training event supporting over 50 end users and directly aligning technical innovation with key business objectives.
 
@@ -60,21 +60,9 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
 
 # Projects
-## **[Convoy Connect](https://github.com/joshrnoll/convoy-connect)**
-
-Engineered a full-stack web application that streamlines the vehicle dispatch process by digitizing Preventative Maintenance Checks and Services (PMCS) and automating dispatcher workflows. Shortened vehicle dispatch time from over 3 hours to just a few minutes.
-
-
-
-## **[My Cloud Resume](https://resume.joshrnoll.com)**
-
-Designed and developed a dynamic personal resume website from scratch using HTML, CSS, and JavaScript, showcasing technical skills and professional experience. Automated deployment to cloud storage account using GitHub actions, displaying hands-on experience with CI/CD concepts and tooling.
-
-
-
 ## **[Homelab as Code](https://github.com/joshrnoll/homelab-as-code)**
 
-Built a CD pipeline for homelab services, rapidly testing and deploying services to Kubernetes on Talos Linux in support of multiple active users. Demonstrated ability to build and document Infrastructure as Code solutions.
+Designed and implemented a GitOps-based CI/CD pipeline for homelab services, deploying to Kubernetes on Talos Linux with FluxCD. Manages secrets with SOPS and age, and utilizes Tailscale for secure remote management, showcasing advanced Infrastructure as Code and automation expertise.
 
 
 
@@ -87,6 +75,18 @@ Published a suite of modular Ansible roles to Ansible Galaxy, enabling repeatabl
 ## **[Traefik Install Playbook](https://github.com/joshrnoll/ansible-playbook-traefik-tailscale)**
 
 Delivered a reusable, modular Ansible solution to orchestrate Traefik reverse proxy across multiple environments, showcasing ability to build and communicate repeatable deployment strategies.
+
+
+
+## **[Convoy Connect](https://github.com/joshrnoll/convoy-connect)**
+
+Engineered a full-stack web application that streamlines the vehicle dispatch process by digitizing Preventative Maintenance Checks and Services (PMCS) and automating dispatcher workflows. Implemented the PERN stack (PostgreSQL, Express, React, Node.js) to shorten vehicle dispatch time from over 3 hours to just a few minutes.
+
+
+
+## **[My Cloud Resume](https://resume.joshrnoll.com)**
+
+Developed a dynamic personal resume website from scratch using HTML, CSS, and JavaScript, showcasing technical skills and professional experience. Automated deployment to Azure Blob Storage using GitHub Actions, demonstrating hands-on experience with CI/CD concepts and tooling.
 
 
 
