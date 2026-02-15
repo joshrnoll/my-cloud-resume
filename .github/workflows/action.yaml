@@ -2,6 +2,8 @@
 name: Deploy Resume to Azure Storage Account
 on:
   push:
+    paths:
+      - "src/**"
     branches:
       - main
 
@@ -23,4 +25,3 @@ jobs:
           python make.py
       - name: Sync files to Azure storage account
         run: azcopy_v10 sync "./src" "${{ secrets.endpoint_sas_url }}" --recursive --delete-destination=true --from-to LocalBlob
-
