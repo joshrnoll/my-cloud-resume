@@ -60,24 +60,53 @@ This doc is a comprehensive list of my accomplishments, written in plain English
 
 [Project Github](https://github.com/joshrnoll/black-relay)
 
+- Wore two hats: backend engineer and devops engineer
+- Wrote an express backend that subscribed to MQTT topics and persisted data into MongoDB. Data was wrapped in a custom classification system, allowing end users to make data informed decisions based on alert level.
+- Wrote deployment pipeline using github actions to deploy container images to GHCR and deployed to server using docker compose
+
 ### Homelab as Code
 
 [Project Github](https://github.com/joshrnoll/homelab-as-code)
+
+- In the process of converting homelab services from docker to kubernetes
+- Clusters run on Talos linux with Tailscale for secure remote management
+- Tailscale kubernetes operator securely exposes services to Tailnet
+- FluxCD used for GitOps
+- SOPS and age used for encrypting secret values
 
 ### Homelab Ansible Collection
 
 [Project Github](https://github.com/joshrnoll/ansible-collection-homelab)
 
+- Wrote and published a collection of Ansible roles to Ansible galaxy which automate several homelab setup tasks
+- Automates basic linux server setup and hardening and docker installation
+- Automates creation of containerized services using Tailscale containers for networking, traefik reverse proxy and Cloudflare DNS records
+
 ### Traefik Install Playbook
 
 [Project Github](https://github.com/joshrnoll/ansible-playbook-traefik-tailscale)
+
+- Automates the installation of traefik with Tailscale and traefik-kop across multiple hosts using Ansible
 
 ### Personal Website
 
 [Live Site](https://joshrnoll.com)
 
+- My personal website runs on an Azure storage account with Cloudflare proxy for HTTPS
+- The site is built with Hugo and deployed using github actions
+- I write to my blog regularly to learn out loud and share my stories and passion for technology
+- I also run a microblog off the subdomain https://notes.joshrnoll.com where I publish my raw notes
+
 ## Volunteer Work
 
 ### Web Developer, Cybersecurity Canon
 
+- Responsible for posting reviews to the website (which runs on WordPress and Elementor)
+- Responsible for development of new features such as search and filter/sortability, as well as new pages on the site
+- Working on the development of a new platform using NextJS, Supabase and Resend. This new platform will allow members to manager their subscription to the newsletter, members of the canon's editorial team to review, provide feedback and publish reviews, and reviewers to write their reviews in an intuitive editor directly.
+
 ### Director of Programming, Arrowhead Research
+
+- Responsible for continued development of engineering sprints, innovation forums and competition participation such as MITRE eCTF.
+
+- Spoke at Moonshot Rodeo, an innovation forum that allows service members to present on their innovation projects. I presented on my open source code contribution to goose, highlighting how an open source culture within the military would enable faster innovation timelines and allow for identification of technical talent within the ranks. The US Army CTO was on the feedback panel and the presentation was received very positively.
