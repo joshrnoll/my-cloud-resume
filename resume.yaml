@@ -26,18 +26,20 @@ cv:
 
     experience:
       - company: Arrowhead Research
-        position: Volunteer - Director of Programming
+        position: (Volunteer) Director of Programming
         start_date: 2026-01
-        end_state: present
+        end_date: present
         highlights:
           - Delivered a presentation at a company-sponsored prototype showcase on open-source methodology to a panel of 5 industry experts and DoD leaders including the US Army CTO, demonstrating technical leadership and communication skills.
+
       - company: Cybersecurity Canon
-        position: Volunteer - Web Developer
+        position: (Volunteer) Web Developer
         start_date: 2025-11
         end_date: present
         highlights:
           - Publish weekly book reviews to WordPress-hosted website, supporting content delivery for a curated cybersecurity reading resource.
           - Developing a prototype website platform using modern web technologies to replace WordPress infrastructure, communicating architectural benefits and trade-offs to leadership to enable enhanced extensibility.
+
       - company: US Army
         position: Data and Information Systems Engineer
         start_date: 2021-01

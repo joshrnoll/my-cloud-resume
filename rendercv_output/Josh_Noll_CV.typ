@@ -114,7 +114,7 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
 #regular-entry(
   [
-    #strong[Volunteer - Director of Programming], #emph[Arrowhead Research]
+    #strong[(Volunteer) Director of Programming], #emph[Arrowhead Research]
 
   ],
   [
@@ -129,7 +129,7 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
 #regular-entry(
   [
-    #strong[Volunteer - Web Developer], #emph[Cybersecurity Canon]
+    #strong[(Volunteer) Web Developer], #emph[Cybersecurity Canon]
 
   ],
   [

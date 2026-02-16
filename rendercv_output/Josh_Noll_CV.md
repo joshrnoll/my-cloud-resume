@@ -21,7 +21,7 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 **CompTIA:** [ComptTIA SecurityX](https://www.credly.com/badges/ba45cd0c-fe71-4c6f-bfbf-9b8acdeeff9a/public_url), [CompTIA Security+](https://www.credly.com/badges/76550d7d-a270-421c-8436-b0123897fdf8/public_url), [CompTIA Network+](https://www.credly.com/badges/cf3b9100-9b51-488b-84d5-4beb661bee83/public_url), [CompTIA Project+](https://www.credly.com/badges/e5ef6d2e-bedd-48c2-a1d0-7b750d418908/public_url)
 
 # Experience
-## **Volunteer - Director of Programming**, *Arrowhead Research*
+## **(Volunteer) Director of Programming**, *Arrowhead Research*
 
 *Jan 2026 – present*
 
@@ -29,7 +29,7 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
 
 
-## **Volunteer - Web Developer**, *Cybersecurity Canon*
+## **(Volunteer) Web Developer**, *Cybersecurity Canon*
 
 *Nov 2025 – present*
 
