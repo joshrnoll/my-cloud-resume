@@ -114,6 +114,38 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
 #regular-entry(
   [
+    #strong[Volunteer - Director of Programming], #emph[Arrowhead Research]
+
+  ],
+  [
+    #emph[Jan 2026 – present]
+
+  ],
+  main-column-second-row: [
+    - Delivered a presentation at a company-sponsored prototype showcase on open-source methodology to a panel of 5 industry experts and DoD leaders including the US Army CTO, demonstrating technical leadership and communication skills.
+
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[Volunteer - Web Developer], #emph[Cybersecurity Canon]
+
+  ],
+  [
+    #emph[Nov 2025 – present]
+
+  ],
+  main-column-second-row: [
+    - Publish weekly book reviews to WordPress-hosted website, supporting content delivery for a curated cybersecurity reading resource.
+
+    - Developing a prototype website platform using modern web technologies to replace WordPress infrastructure, communicating architectural benefits and trade-offs to leadership to enable enhanced extensibility.
+
+  ],
+)
+
+#regular-entry(
+  [
     #strong[Data and Information Systems Engineer], #emph[US Army]
 
   ],
@@ -150,23 +182,6 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
   ],
   main-column-second-row: [
     - Led the successful alignment between C-suite leadership and technical teams in executing critical strategic initiatives, including the U.S. Army Arctic Strategy.
-
-  ],
-)
-
-#regular-entry(
-  [
-    #strong[Platoon Leader], #emph[US Army]
-
-  ],
-  [
-    #emph[Mar 2019 – Feb 2020]
-
-  ],
-  main-column-second-row: [
-    - Successfully led a team of 25 through a demanding training and validation process under high-stress conditions, achieving operational readiness. Demonstrated ability to guide cross-functional teams and manage mission-critical projects in a dynamic, high-stakes environment.
-
-    - Led deployment and management of secure communications equipment in dynamic environments, successfully supporting multiple operational and training missions in high stress environments.
 
   ],
 )

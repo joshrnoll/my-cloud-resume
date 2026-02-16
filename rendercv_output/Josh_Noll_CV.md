@@ -21,6 +21,24 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 **CompTIA:** [ComptTIA SecurityX](https://www.credly.com/badges/ba45cd0c-fe71-4c6f-bfbf-9b8acdeeff9a/public_url), [CompTIA Security+](https://www.credly.com/badges/76550d7d-a270-421c-8436-b0123897fdf8/public_url), [CompTIA Network+](https://www.credly.com/badges/cf3b9100-9b51-488b-84d5-4beb661bee83/public_url), [CompTIA Project+](https://www.credly.com/badges/e5ef6d2e-bedd-48c2-a1d0-7b750d418908/public_url)
 
 # Experience
+## **Volunteer - Director of Programming**, *Arrowhead Research*
+
+*Jan 2026 – present*
+
+- Delivered a presentation at a company-sponsored prototype showcase on open-source methodology to a panel of 5 industry experts and DoD leaders including the US Army CTO, demonstrating technical leadership and communication skills.
+
+
+
+## **Volunteer - Web Developer**, *Cybersecurity Canon*
+
+*Nov 2025 – present*
+
+- Publish weekly book reviews to WordPress-hosted website, supporting content delivery for a curated cybersecurity reading resource.
+
+- Developing a prototype website platform using modern web technologies to replace WordPress infrastructure, communicating architectural benefits and trade-offs to leadership to enable enhanced extensibility.
+
+
+
 ## **Data and Information Systems Engineer**, *US Army*
 
 *Jan 2021 – present*
@@ -46,16 +64,6 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 *Feb 2020 – Jan 2021*
 
 - Led the successful alignment between C-suite leadership and technical teams in executing critical strategic initiatives, including the U.S. Army Arctic Strategy.
-
-
-
-## **Platoon Leader**, *US Army*
-
-*Mar 2019 – Feb 2020*
-
-- Successfully led a team of 25 through a demanding training and validation process under high-stress conditions, achieving operational readiness. Demonstrated ability to guide cross-functional teams and manage mission-critical projects in a dynamic, high-stakes environment.
-
-- Led deployment and management of secure communications equipment in dynamic environments, successfully supporting multiple operational and training missions in high stress environments.
 
 
 
