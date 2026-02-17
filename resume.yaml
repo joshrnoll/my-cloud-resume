@@ -65,14 +65,14 @@ cv:
       - name: "[Black Relay](https://github.com/joshrnoll/black-relay)"
         summary: Developed a full-stack IoT platform using JavaScript, Express, MQTT, and MongoDB to collect, process, and visualize real-time sensor data, enabling data-driven decision-making in resource-constrained environments.
 
-      - name: "[My Cloud Resume](https://resume.joshrnoll.com)"
-        summary: Designed and developed a dynamic personal resume website from scratch using HTML, CSS, and JavaScript, showcasing technical skills and professional experience. Automated deployment to cloud storage account using GitHub actions, displaying hands-on experience with CI/CD concepts and tooling.
-
-      - name: "[Homelab as Code](https://github.com/joshrnoll/homelab-as-code)"
-        summary: Built a CD pipeline for homelab services, rapidly testing and deploying services to Kubernetes on Talos Linux in support of multiple active users. Demonstrated ability to build and document Infrastructure as Code solutions.
-
       - name: "[Homelab Ansible Collection](https://github.com/joshrnoll/ansible-collection-homelab)"
         summary: Published a suite of modular Ansible roles to Ansible Galaxy, enabling repeatable server baselines and deployment of Docker containers onto a Tailscale network. Demonstrated ability to deliver reusable, community-facing infrastructure solutions.
+
+      - name: "[Springboot Speedrun](https://github.com/joshrnoll/springboot-speedrun)"
+        summary: Developed a RESTful API using Java Spring Boot to demonstrate rapid technology adoption and hands-on learning methodology in enterprise Java frameworks.
+
+      - name: "[Convoy Connect](https://github.com/joshrnoll/convoy-connect)"
+        summary: Engineered a RESTful API using Node.js, Express, and PostgreSQL to streamline vehicle dispatching workflows. Collaborated with a cross-functional development team to deliver capstone project for the Galvanize Software Development Immersive, demonstrating full-stack development capabilities and database design expertise.
 
       - name: "[Bastogne Automation Tool](https://github.com/joshrnoll/BAT)"
         summary: Delivered a scalable, repeatable solution that improved service desk efficiency and user onboarding experience via a custom PowerShell module.

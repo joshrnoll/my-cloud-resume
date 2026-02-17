@@ -75,21 +75,21 @@ Developed a full-stack IoT platform using JavaScript, Express, MQTT, and MongoDB
 
 
 
-## **[My Cloud Resume](https://resume.joshrnoll.com)**
-
-Designed and developed a dynamic personal resume website from scratch using HTML, CSS, and JavaScript, showcasing technical skills and professional experience. Automated deployment to cloud storage account using GitHub actions, displaying hands-on experience with CI/CD concepts and tooling.
-
-
-
-## **[Homelab as Code](https://github.com/joshrnoll/homelab-as-code)**
-
-Built a CD pipeline for homelab services, rapidly testing and deploying services to Kubernetes on Talos Linux in support of multiple active users. Demonstrated ability to build and document Infrastructure as Code solutions.
-
-
-
 ## **[Homelab Ansible Collection](https://github.com/joshrnoll/ansible-collection-homelab)**
 
 Published a suite of modular Ansible roles to Ansible Galaxy, enabling repeatable server baselines and deployment of Docker containers onto a Tailscale network. Demonstrated ability to deliver reusable, community-facing infrastructure solutions.
+
+
+
+## **[Springboot Speedrun](https://github.com/joshrnoll/springboot-speedrun)**
+
+Developed a RESTful API using Java Spring Boot to demonstrate rapid technology adoption and hands-on learning methodology in enterprise Java frameworks.
+
+
+
+## **[Convoy Connect](https://github.com/joshrnoll/convoy-connect)**
+
+Engineered a RESTful API using Node.js, Express, and PostgreSQL to streamline vehicle dispatching workflows. Collaborated with a cross-functional development team to deliver capstone project for the Galvanize Software Development Immersive, demonstrating full-stack development capabilities and database design expertise.
 
 
 
