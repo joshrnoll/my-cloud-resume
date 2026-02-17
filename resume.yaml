@@ -72,8 +72,11 @@ cv:
       - name: "[Homelab Ansible Collection](https://github.com/joshrnoll/ansible-collection-homelab)"
         summary: Published a suite of modular Ansible roles to Ansible Galaxy, enabling repeatable server baselines and deployment of Docker containers onto a Tailscale network. Demonstrated ability to deliver reusable, community-facing infrastructure solutions for backend deployments.
 
-      - name: "[Bastogne Automation Tool](https://github.com/joshrnoll/BAT)"
-        summary: Delivered a scalable, repeatable backend automation solution that improved service desk efficiency and user onboarding experience via a custom PowerShell module.
+      - name: "[Homelab as Code](https://github.com/joshrnoll/homelab-as-code)"
+        summary: Engineered a GitOps-based CD pipeline using Kubernetes and FluxCD to automate deployment of containerized backend services, demonstrating infrastructure-as-code practices and declarative configuration management for scalable, reliable service delivery.
+
+      - name: "[My Cloud Resume](https://github.com/joshrnoll/my-cloud-resume)"
+        summary: Built a hybrid resume generation system using Python, Jinja2 templating, and RenderCV to automate dual-format output (HTML/PDF) from a single YAML data source, with CI/CD deployment to Azure Blob Storage via Gitea Actions.
 
     education:
       - label: Galvanize

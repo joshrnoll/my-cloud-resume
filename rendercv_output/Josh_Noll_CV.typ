@@ -94,11 +94,11 @@
 
 == Summary
 
-Passionate, results-driven problem solver with expertise in cloud infrastructure, automation, containerization and system integration. Proven ability to translate technical requirements into customer-centric solutions. Military leader with a history of driving digital transformation, delivering stakeholder-aligned outcomes, and communicating value to both technical and executive audiences.
+Results-driven Backend Engineer with expertise in cloud infrastructure, API development, and data management. Proven ability to design, implement, and optimize scalable backend solutions. Military leader with a history of driving digital transformation and delivering stakeholder-aligned outcomes.
 
 == Skills
 
-Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS, JavaScript, TypeScript, React, Vite, NextJS, Jest, Tailwind, Docker, Kubernetes, FluxCD, VMWare, Proxmox, Wireguard, Tailscale, Nginx, Traefik
+Python, Ansible, Docker, Kubernetes, Azure, AWS, Linux, PowerShell, Bash, JavaScript, TypeScript, Node.js, Express, MongoDB, PostgreSQL, Git, CI\/CD, Flask, VMWare, Proxmox, Wireguard, Tailscale, Nginx, Traefik, HTML, CSS, React, Vite, NextJS, Jest, Tailwind, FluxCD
 
 == Certifications
 
@@ -122,15 +122,11 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
   ],
   main-column-second-row: [
-    - Orchestrated and delivered an AI-powered search solution using Azure AI Search in collaboration with cross-functional teams, improving accessibility of over 22TB of data and shortening stakeholder decision-making time by up to 15\%.
+    - Designed and delivered an AI-powered search solution using Azure AI Search in collaboration with cross-functional teams, integrating 22TB of data and improving data accessibility.
 
-    - Developed and drove adoption of a custom PowerShell module for programmatic user account auditing and management, doubling the speed of service desk ticket closures.
+    - Developed and deployed a custom PowerShell module for programmatic user account auditing and management, significantly increasing service desk efficiency.
 
-    - Recognized upward trend in cybersecurity violations across the organization due to a lack of policy, presenting both the issue and recommendations to C-suite leadership in 3 monthly board meetings.
-
-    - Authored and successfully delivered an enterprise cybersecurity policy by aligning technical controls with business priorities, delivering C-suite buy-in and reducing violations by over 75\%.
-
-    - Championed Windows server upgrades by advising leadership on risk and urgency, resulting in C-suite approval and reduced vulnerabilities on 34+ systems
+    - Championed Windows server upgrades by advising leadership on risk and urgency, resulting in C-suite approval and reduced vulnerabilities on 34+ systems.
 
     - Designed and presented a tactical network and systems architecture to 5+ C-suite stakeholders, enabling buy-in for a major training event supporting over 50 end users and directly aligning technical innovation with key business objectives.
 
@@ -198,20 +194,7 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
   [
   ],
   main-column-second-row: [
-    #summary[Developed a full-stack IoT platform using JavaScript, Express, MQTT, and MongoDB to collect, process, and visualize real-time sensor data, enabling data-driven decision-making in resource-constrained environments.]
-
-  ],
-)
-
-  #regular-entry(
-  [
-    #strong[#link("https://github.com/joshrnoll/ansible-collection-homelab")[Homelab Ansible Collection]]
-
-  ],
-  [
-  ],
-  main-column-second-row: [
-    #summary[Published a suite of modular Ansible roles to Ansible Galaxy, enabling repeatable server baselines and deployment of Docker containers onto a Tailscale network. Demonstrated ability to deliver reusable, community-facing infrastructure solutions.]
+    #summary[Developed a full-stack IoT platform using JavaScript, Express, MQTT, and MongoDB to collect, process, and visualize real-time sensor data, enabling data-driven decision-making and efficient backend data handling.]
 
   ],
 )
@@ -224,7 +207,7 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
   [
   ],
   main-column-second-row: [
-    #summary[Developed a RESTful API using Java Spring Boot to demonstrate rapid technology adoption and hands-on learning methodology in enterprise Java frameworks.]
+    #summary[Developed a RESTful API using Java Spring Boot to demonstrate rapid technology adoption and hands-on learning methodology in enterprise Java frameworks, focusing on robust backend service creation.]
 
   ],
 )
@@ -237,20 +220,46 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
   [
   ],
   main-column-second-row: [
-    #summary[Engineered a RESTful API using Node.js, Express, and PostgreSQL to streamline vehicle dispatching workflows. Collaborated with a cross-functional development team to deliver capstone project for the Galvanize Software Development Immersive, demonstrating full-stack development capabilities and database design expertise.]
+    #summary[Engineered a RESTful API using Node.js, Express, and PostgreSQL to streamline vehicle dispatching workflows and demonstrate database design expertise. Collaborated with a cross-functional development team to deliver capstone project for the Galvanize Software Development Immersive.]
 
   ],
 )
 
   #regular-entry(
   [
-    #strong[#link("https://github.com/joshrnoll/BAT")[Bastogne Automation Tool]]
+    #strong[#link("https://github.com/joshrnoll/ansible-collection-homelab")[Homelab Ansible Collection]]
 
   ],
   [
   ],
   main-column-second-row: [
-    #summary[Delivered a scalable, repeatable solution that improved service desk efficiency and user onboarding experience via a custom PowerShell module.]
+    #summary[Published a suite of modular Ansible roles to Ansible Galaxy, enabling repeatable server baselines and deployment of Docker containers onto a Tailscale network. Demonstrated ability to deliver reusable, community-facing infrastructure solutions for backend deployments.]
+
+  ],
+)
+
+  #regular-entry(
+  [
+    #strong[#link("https://github.com/joshrnoll/homelab-as-code")[Homelab as Code]]
+
+  ],
+  [
+  ],
+  main-column-second-row: [
+    #summary[Engineered a GitOps-based CD pipeline using Kubernetes and FluxCD to automate deployment of containerized backend services, demonstrating infrastructure-as-code practices and declarative configuration management for scalable, reliable service delivery.]
+
+  ],
+)
+
+  #regular-entry(
+  [
+    #strong[#link("https://github.com/joshrnoll/my-cloud-resume")[My Cloud Resume]]
+
+  ],
+  [
+  ],
+  main-column-second-row: [
+    #summary[Built a hybrid resume generation system using Python, Jinja2 templating, and RenderCV to automate dual-format output (HTML\/PDF) from a single YAML data source, with CI\/CD deployment to Azure Blob Storage via Gitea Actions.]
 
   ],
 )
