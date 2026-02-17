@@ -108,41 +108,9 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
 #strong[Azure:] #link("https://learn.microsoft.com/en-us/users/joshrnoll/credentials/A419160A7DC41331?ref=https%3A%2F%2Fjoshrnoll.com%2F")[Microsoft Azure Administrator Associate (Az-104)], #link("https://learn.microsoft.com/api/credentials/share/en-us/joshrnoll/B91E76B27D0D2605?sharingId=236C17A9E269164")[Microsoft Azure Fundamentals (Az-900)]
 
-#strong[CompTIA:] #link("https://www.credly.com/badges/ba45cd0c-fe71-4c6f-bfbf-9b8acdeeff9a/public_url")[ComptTIA SecurityX], #link("https://www.credly.com/badges/76550d7d-a270-421c-8436-b0123897fdf8/public_url")[CompTIA Security+], #link("https://www.credly.com/badges/cf3b9100-9b51-488b-84d5-4beb661bee83/public_url")[CompTIA Network+], #link("https://www.credly.com/badges/e5ef6d2e-bedd-48c2-a1d0-7b750d418908/public_url")[CompTIA Project+]
+#strong[CompTIA:] #link("https://www.credly.com/badges/ba45cd0c-fe71-4c6f-bfbf-9b8acdeeff9a/public_url")[CompTIA SecurityX], #link("https://www.credly.com/badges/76550d7d-a270-421c-8436-b0123897fdf8/public_url")[CompTIA Security+], #link("https://www.credly.com/badges/cf3b9100-9b51-488b-84d5-4beb661bee83/public_url")[CompTIA Network+], #link("https://www.credly.com/badges/e5ef6d2e-bedd-48c2-a1d0-7b750d418908/public_url")[CompTIA Project+]
 
 == Experience
-
-#regular-entry(
-  [
-    #strong[(Volunteer) Director of Programming], #emph[Arrowhead Research]
-
-  ],
-  [
-    #emph[Jan 2026 – present]
-
-  ],
-  main-column-second-row: [
-    - Delivered a presentation at a company-sponsored prototype showcase on open-source methodology to a panel of 5 industry experts and DoD leaders including the US Army CTO, demonstrating technical leadership and communication skills.
-
-  ],
-)
-
-#regular-entry(
-  [
-    #strong[(Volunteer) Web Developer], #emph[Cybersecurity Canon]
-
-  ],
-  [
-    #emph[Nov 2025 – present]
-
-  ],
-  main-column-second-row: [
-    - Publish weekly book reviews to WordPress-hosted website, supporting content delivery for a curated cybersecurity reading resource.
-
-    - Developing a prototype website platform using modern web technologies to replace WordPress infrastructure, communicating architectural benefits and trade-offs to leadership to enable enhanced extensibility.
-
-  ],
-)
 
 #regular-entry(
   [
@@ -186,6 +154,40 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
   ],
 )
 
+== Volunteering
+
+#regular-entry(
+  [
+    #strong[Director of Programming], #emph[Arrowhead Research]
+
+  ],
+  [
+    #emph[Jan 2026 – present]
+
+  ],
+  main-column-second-row: [
+    - Delivered a presentation at a company-sponsored prototype showcase on open-source methodology to a panel of 5 industry experts and DoD leaders including the US Army CTO, demonstrating technical leadership and communication skills.
+
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[Web Developer], #emph[Cybersecurity Canon]
+
+  ],
+  [
+    #emph[Nov 2025 – present]
+
+  ],
+  main-column-second-row: [
+    - Publish weekly book reviews to WordPress-hosted website, supporting content delivery for a curated cybersecurity reading resource.
+
+    - Developing a prototype website platform using modern web technologies to replace WordPress infrastructure, communicating architectural benefits and trade-offs to leadership to enable enhanced extensibility.
+
+  ],
+)
+
 == Projects
 
   #regular-entry(
@@ -196,7 +198,7 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
   [
   ],
   main-column-second-row: [
-    #summary[Engineered a backend architecture using JavaScript, Express, MQTT and MongoDB to allow extensible sensor data to be displayed on a web applicaton. Enabled data driven decision making in austere environments.]
+    #summary[Developed a full-stack IoT platform using JavaScript, Express, MQTT, and MongoDB to collect, process, and visualize real-time sensor data, enabling data-driven decision-making in resource-constrained environments.]
 
   ],
 )
@@ -242,19 +244,6 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
   #regular-entry(
   [
-    #strong[#link("https://github.com/joshrnoll/ansible-playbook-traefik-tailscale")[Traefik Install Playbook]]
-
-  ],
-  [
-  ],
-  main-column-second-row: [
-    #summary[Delivered a reusable, modular Ansible solution to orchestrate Traefik reverse proxy across multiple environments, showcasing ability to build and communicate repeatable deployment strategies.]
-
-  ],
-)
-
-  #regular-entry(
-  [
     #strong[#link("https://github.com/joshrnoll/BAT")[Bastogne Automation Tool]]
 
   ],
@@ -268,10 +257,10 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
 == Education
 
-#strong[Webster University:] MA, Information Technology Management
+#strong[Galvanize:] Software Development Immersive (SDI), September 2025
 
-#strong[University of Wisconsin - Eau Claire:] BA, German - Liberal Arts
+#strong[Webster University:] MA, Information Technology Management, May 2022
 
-#strong[Galvanize:] Graduate, Software Development Immersive (SDI) Cohort 31
+#strong[US Army Cyber Center of Excellence (CCOE):] Graduate, Information Systems Engineering Course, October 2021
 
-#strong[US Army Cyber Center of Excellence (CCOE):] Graduate, Information Systems Engineering Course
+#strong[University of Wisconsin - Eau Claire:] BA, German - Liberal Arts, May 2017

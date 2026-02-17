@@ -22,18 +22,29 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "header     experience"
-    "summary    experience"
-    "tech       experience"
-    "projects   experience"
-    "certs      experience"
-    "certs      education";
+    "header       header"
+    "summary      experience"
+    "tech         experience"
+    "projects     experience"
+    "certs        volunteering"
+    "education    volunteering";
+  grid-auto-rows: min-content;
   align-items: start;
+  padding: 20px;
 }
 
 body section {
-  margin: 15px;
+  margin: 0 15px 0 15px;
   padding: 5px;
+}
+
+#summary {
+  margin-top: 15px;
+}
+
+#technologies,
+#projects {
+  margin-top: 5px;
 }
 
 body section ul,
@@ -79,8 +90,14 @@ header button:hover {
 
 /* Summary Section */
 
+.button-group {
+  display: inline;
+}
+
 #pdfview {
-  margin-top: 8px;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 #summary {
@@ -117,6 +134,12 @@ header button:hover {
   grid-area: experience;
 }
 
+/* Volunteering Section */
+
+#volunteering {
+  grid-area: volunteering;
+}
+
 /* Footer Section  */
 
 footer {
@@ -138,8 +161,9 @@ footer {
       "summary"
       "tech"
       "projects"
-      "certs"
       "experience"
-      "education";
+      "volunteering"
+      "education"
+      "certs";
   }
 }

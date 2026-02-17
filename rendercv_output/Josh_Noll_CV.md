@@ -18,27 +18,9 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
 **Azure:** [Microsoft Azure Administrator Associate (Az-104)](https://learn.microsoft.com/en-us/users/joshrnoll/credentials/A419160A7DC41331?ref=https%3A%2F%2Fjoshrnoll.com%2F), [Microsoft Azure Fundamentals (Az-900)](https://learn.microsoft.com/api/credentials/share/en-us/joshrnoll/B91E76B27D0D2605?sharingId=236C17A9E269164)
 
-**CompTIA:** [ComptTIA SecurityX](https://www.credly.com/badges/ba45cd0c-fe71-4c6f-bfbf-9b8acdeeff9a/public_url), [CompTIA Security+](https://www.credly.com/badges/76550d7d-a270-421c-8436-b0123897fdf8/public_url), [CompTIA Network+](https://www.credly.com/badges/cf3b9100-9b51-488b-84d5-4beb661bee83/public_url), [CompTIA Project+](https://www.credly.com/badges/e5ef6d2e-bedd-48c2-a1d0-7b750d418908/public_url)
+**CompTIA:** [CompTIA SecurityX](https://www.credly.com/badges/ba45cd0c-fe71-4c6f-bfbf-9b8acdeeff9a/public_url), [CompTIA Security+](https://www.credly.com/badges/76550d7d-a270-421c-8436-b0123897fdf8/public_url), [CompTIA Network+](https://www.credly.com/badges/cf3b9100-9b51-488b-84d5-4beb661bee83/public_url), [CompTIA Project+](https://www.credly.com/badges/e5ef6d2e-bedd-48c2-a1d0-7b750d418908/public_url)
 
 # Experience
-## **(Volunteer) Director of Programming**, *Arrowhead Research*
-
-*Jan 2026 – present*
-
-- Delivered a presentation at a company-sponsored prototype showcase on open-source methodology to a panel of 5 industry experts and DoD leaders including the US Army CTO, demonstrating technical leadership and communication skills.
-
-
-
-## **(Volunteer) Web Developer**, *Cybersecurity Canon*
-
-*Nov 2025 – present*
-
-- Publish weekly book reviews to WordPress-hosted website, supporting content delivery for a curated cybersecurity reading resource.
-
-- Developing a prototype website platform using modern web technologies to replace WordPress infrastructure, communicating architectural benefits and trade-offs to leadership to enable enhanced extensibility.
-
-
-
 ## **Data and Information Systems Engineer**, *US Army*
 
 *Jan 2021 – present*
@@ -67,10 +49,29 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
 
 
+# Volunteering
+## **Director of Programming**, *Arrowhead Research*
+
+*Jan 2026 – present*
+
+- Delivered a presentation at a company-sponsored prototype showcase on open-source methodology to a panel of 5 industry experts and DoD leaders including the US Army CTO, demonstrating technical leadership and communication skills.
+
+
+
+## **Web Developer**, *Cybersecurity Canon*
+
+*Nov 2025 – present*
+
+- Publish weekly book reviews to WordPress-hosted website, supporting content delivery for a curated cybersecurity reading resource.
+
+- Developing a prototype website platform using modern web technologies to replace WordPress infrastructure, communicating architectural benefits and trade-offs to leadership to enable enhanced extensibility.
+
+
+
 # Projects
 ## **[Black Relay](https://github.com/joshrnoll/black-relay)**
 
-Engineered a backend architecture using JavaScript, Express, MQTT and MongoDB to allow extensible sensor data to be displayed on a web applicaton. Enabled data driven decision making in austere environments.
+Developed a full-stack IoT platform using JavaScript, Express, MQTT, and MongoDB to collect, process, and visualize real-time sensor data, enabling data-driven decision-making in resource-constrained environments.
 
 
 
@@ -92,12 +93,6 @@ Published a suite of modular Ansible roles to Ansible Galaxy, enabling repeatabl
 
 
 
-## **[Traefik Install Playbook](https://github.com/joshrnoll/ansible-playbook-traefik-tailscale)**
-
-Delivered a reusable, modular Ansible solution to orchestrate Traefik reverse proxy across multiple environments, showcasing ability to build and communicate repeatable deployment strategies.
-
-
-
 ## **[Bastogne Automation Tool](https://github.com/joshrnoll/BAT)**
 
 Delivered a scalable, repeatable solution that improved service desk efficiency and user onboarding experience via a custom PowerShell module.
@@ -105,10 +100,10 @@ Delivered a scalable, repeatable solution that improved service desk efficiency 
 
 
 # Education
-**Webster University:** MA, Information Technology Management
+**Galvanize:** Software Development Immersive (SDI), September 2025
 
-**University of Wisconsin - Eau Claire:** BA, German - Liberal Arts
+**Webster University:** MA, Information Technology Management, May 2022
 
-**Galvanize:** Graduate, Software Development Immersive (SDI) Cohort 31
+**US Army Cyber Center of Excellence (CCOE):** Graduate, Information Systems Engineering Course, October 2021
 
-**US Army Cyber Center of Excellence (CCOE):** Graduate, Information Systems Engineering Course
+**University of Wisconsin - Eau Claire:** BA, German - Liberal Arts, May 2017
