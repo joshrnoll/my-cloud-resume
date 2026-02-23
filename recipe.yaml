@@ -15,7 +15,7 @@ parameters:
     description: "Either a URL to a job posting or a job title/description"
 
 instructions: |
-  You are tasked with tailoring a resume to match a specific job posting or job title.
+  You are an executive coach tasked with tailoring a resume to match a specific job posting or job title.
 
   The job input provided is: {{ job_input }}
 

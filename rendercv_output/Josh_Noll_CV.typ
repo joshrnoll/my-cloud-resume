@@ -94,23 +94,30 @@
 
 == Summary
 
-Passionate, results-driven problem solver with expertise in cloud infrastructure, automation, containerization and system integration. Proven ability to translate technical requirements into customer-centric solutions. Military leader with a history of driving digital transformation, delivering stakeholder-aligned outcomes, and communicating value to both technical and executive audiences.
-
-== Skills
-
-Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS, JavaScript, TypeScript, React, Vite, NextJS, Jest, Tailwind, Docker, Kubernetes, FluxCD, VMWare, Proxmox, Wireguard, Tailscale, Nginx, Traefik
-
-== Certifications
-
-#strong[ISC2:] #link("https://www.credly.com/badges/4df1206d-dc14-4302-83f4-cc5f8e76e2dc/public_url")[Certified Information Systems Security Professional (CISSP)]
-
-#strong[Cisco:] #link("https://www.credly.com/badges/218f2074-76ba-4d60-b0d5-5bc83c515052/public_url")[Cisco Certified Networking Associate (CCNA)]
-
-#strong[Azure:] #link("https://learn.microsoft.com/en-us/users/joshrnoll/credentials/A419160A7DC41331?ref=https%3A%2F%2Fjoshrnoll.com%2F")[Microsoft Azure Administrator Associate (Az-104)], #link("https://learn.microsoft.com/api/credentials/share/en-us/joshrnoll/B91E76B27D0D2605?sharingId=236C17A9E269164")[Microsoft Azure Fundamentals (Az-900)]
-
-#strong[CompTIA:] #link("https://www.credly.com/badges/ba45cd0c-fe71-4c6f-bfbf-9b8acdeeff9a/public_url")[CompTIA SecurityX], #link("https://www.credly.com/badges/76550d7d-a270-421c-8436-b0123897fdf8/public_url")[CompTIA Security+], #link("https://www.credly.com/badges/cf3b9100-9b51-488b-84d5-4beb661bee83/public_url")[CompTIA Network+], #link("https://www.credly.com/badges/e5ef6d2e-bedd-48c2-a1d0-7b750d418908/public_url")[CompTIA Project+]
+Transitioning Army officer and IT professional seeking a Solutions Architect role, bringing 5+ years of hands-on experience designing and delivering cloud-based systems on Azure, integrating enterprise data platforms, and automating infrastructure. Proven ability to translate complex business requirements into scalable technical architectures and communicate trade-offs to both technical and executive audiences.
 
 == Experience
+
+#regular-entry(
+  [
+    #strong[Infrastructure Engineer (SkillBridge)], #emph[Unstructured]
+
+  ],
+  [
+    #emph[Feb 2026 – present]
+
+  ],
+  main-column-second-row: [
+    - Supporting cloud infrastructure and tooling powering the platform, including Kubernetes, CI\/CD pipelines, and Infrastructure as Code.
+
+    - Assisting with infrastructure automation, deployment pipelines, and configuration management to improve platform reliability.
+
+    - Contributing to documentation, runbooks, and operational knowledge sharing to strengthen team practices.
+
+    - Participating in infrastructure planning discussions and incident reviews to build operational awareness and identify improvements.
+
+  ],
+)
 
 #regular-entry(
   [
@@ -118,38 +125,21 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
   ],
   [
-    #emph[Jan 2021 – present]
+    #emph[Jan 2021 – Feb 2026]
 
   ],
   main-column-second-row: [
-    - Orchestrated and delivered an AI-powered search solution using Azure AI Search in collaboration with cross-functional teams, improving accessibility of over 22TB of data and shortening stakeholder decision-making time by up to 15\%.
+    - Architected and delivered an enterprise search solution using Azure Web App Service, Azure AI Search, Azure Data Factory and Azure Data Lake, integrating 22TB of raw data into 2TB of indexed, accessible data and reducing stakeholder data retrieval time from 20+ minutes to seconds.
 
-    - Developed and drove adoption of a custom PowerShell module for programmatic user account auditing and management, doubling the speed of service desk ticket closures.
+    - Designed and presented a tactical network and systems architecture to 5+ C-suite stakeholders, enabling buy-in for a major training event supporting over 50 end users and directly aligning technical solutions with key business objectives.
 
-    - Recognized upward trend in cybersecurity violations across the organization due to a lack of policy, presenting both the issue and recommendations to C-suite leadership in 3 monthly board meetings.
-
-    - Authored and successfully delivered an enterprise cybersecurity policy by aligning technical controls with business priorities, delivering C-suite buy-in and reducing violations by over 75\%.
-
-    - Championed Windows server upgrades by advising leadership on risk and urgency, resulting in C-suite approval and reduced vulnerabilities on 34+ systems
-
-    - Designed and presented a tactical network and systems architecture to 5+ C-suite stakeholders, enabling buy-in for a major training event supporting over 50 end users and directly aligning technical innovation with key business objectives.
+    - Installed resilient domain architecture across multiple sites, enabling service uptime and reliability in austere, resource-constrained environments.
 
     - Directed planning and implementation of a robust off-site network connection, advising key stakeholders and delivering reliable connectivity to over 50 users under challenging operational conditions.
 
-  ],
-)
+    - Authored and successfully delivered an enterprise cybersecurity policy by aligning technical controls with business priorities, delivering C-suite buy-in and reducing violations by over 75\%.
 
-#regular-entry(
-  [
-    #strong[Executive Assistant], #emph[US Army]
-
-  ],
-  [
-    #emph[Feb 2020 – Jan 2021]
-
-  ],
-  main-column-second-row: [
-    - Led the successful alignment between C-suite leadership and technical teams in executing critical strategic initiatives, including the U.S. Army Arctic Strategy.
+    - Developed and drove adoption of a custom PowerShell module for programmatic user account auditing and management, doubling the speed of service desk ticket closures.
 
   ],
 )
@@ -181,9 +171,9 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
   ],
   main-column-second-row: [
-    - Publish weekly book reviews to WordPress-hosted website, supporting content delivery for a curated cybersecurity reading resource.
+    - Architecting a replacement platform using NextJS and Supabase, presenting architectural trade-offs and migration strategy to leadership to enable enhanced extensibility and self-service capabilities.
 
-    - Developing a prototype website platform using modern web technologies to replace WordPress infrastructure, communicating architectural benefits and trade-offs to leadership to enable enhanced extensibility.
+    - Publish weekly book reviews to WordPress-hosted website, supporting content delivery for a curated cybersecurity reading resource.
 
   ],
 )
@@ -192,13 +182,13 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
 
   #regular-entry(
   [
-    #strong[#link("https://github.com/joshrnoll/black-relay")[Black Relay]]
+    #strong[#link("https://github.com/joshrnoll/homelab-as-code")[Homelab as Code]]
 
   ],
   [
   ],
   main-column-second-row: [
-    #summary[Developed a full-stack IoT platform using JavaScript, Express, MQTT, and MongoDB to collect, process, and visualize real-time sensor data, enabling data-driven decision-making in resource-constrained environments.]
+    #summary[Architected a GitOps-driven CD pipeline deploying services to Kubernetes on Talos Linux using FluxCD, Tailscale for secure networking, and SOPS\/age for secrets management. Demonstrated ability to design, document and implement Infrastructure as Code solutions.]
 
   ],
 )
@@ -211,20 +201,20 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
   [
   ],
   main-column-second-row: [
-    #summary[Designed and developed a dynamic personal resume website from scratch using HTML, CSS, and JavaScript, showcasing technical skills and professional experience. Automated deployment to cloud storage account using GitHub actions, displaying hands-on experience with CI\/CD concepts and tooling.]
+    #summary[Designed and deployed a cloud-hosted resume website to Azure Blob Storage using HTML, CSS, and JavaScript with automated CI\/CD via GitHub Actions, demonstrating end-to-end solution delivery on a cloud platform.]
 
   ],
 )
 
   #regular-entry(
   [
-    #strong[#link("https://github.com/joshrnoll/homelab-as-code")[Homelab as Code]]
+    #strong[#link("https://github.com/joshrnoll/black-relay")[Black Relay]]
 
   ],
   [
   ],
   main-column-second-row: [
-    #summary[Built a CD pipeline for homelab services, rapidly testing and deploying services to Kubernetes on Talos Linux in support of multiple active users. Demonstrated ability to build and document Infrastructure as Code solutions.]
+    #summary[Architected a full-stack IoT platform integrating JavaScript, Express, MQTT, and MongoDB to collect, process, and visualize real-time sensor data with a custom classification system, enabling data-driven decision-making in resource-constrained environments.]
 
   ],
 )
@@ -237,30 +227,31 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
   [
   ],
   main-column-second-row: [
-    #summary[Published a suite of modular Ansible roles to Ansible Galaxy, enabling repeatable server baselines and deployment of Docker containers onto a Tailscale network. Demonstrated ability to deliver reusable, community-facing infrastructure solutions.]
-
-  ],
-)
-
-  #regular-entry(
-  [
-    #strong[#link("https://github.com/joshrnoll/BAT")[Bastogne Automation Tool]]
-
-  ],
-  [
-  ],
-  main-column-second-row: [
-    #summary[Delivered a scalable, repeatable solution that improved service desk efficiency and user onboarding experience via a custom PowerShell module.]
+    #summary[Published a suite of modular Ansible roles to Ansible Galaxy, enabling repeatable server baselines and automated deployment of containerized services with Tailscale networking, Traefik reverse proxy and Cloudflare DNS integration.]
 
   ],
 )
 
 == Education
 
-#strong[Galvanize:] Software Development Immersive (SDI), September 2025
-
 #strong[Webster University:] MA, Information Technology Management, May 2022
+
+#strong[University of Wisconsin - Eau Claire:] BA, German - Liberal Arts, May 2017
+
+#strong[Galvanize:] Software Development Immersive (SDI), September 2025
 
 #strong[US Army Cyber Center of Excellence (CCOE):] Graduate, Information Systems Engineering Course, October 2021
 
-#strong[University of Wisconsin - Eau Claire:] BA, German - Liberal Arts, May 2017
+== Skills
+
+Azure, AWS, Solution Architecture, System Integration, Python, PowerShell, Bash, Ansible, Docker, Kubernetes, FluxCD, Linux, VMWare, Proxmox, JavaScript, TypeScript, React, NextJS, HTML, CSS, Nginx, Traefik, Wireguard, Tailscale
+
+== Certifications
+
+#strong[ISC2:] #link("https://www.credly.com/badges/4df1206d-dc14-4302-83f4-cc5f8e76e2dc/public_url")[Certified Information Systems Security Professional (CISSP)]
+
+#strong[Cisco:] #link("https://www.credly.com/badges/218f2074-76ba-4d60-b0d5-5bc83c515052/public_url")[Cisco Certified Networking Associate (CCNA)]
+
+#strong[Azure:] #link("https://learn.microsoft.com/en-us/users/joshrnoll/credentials/A419160A7DC41331?ref=https%3A%2F%2Fjoshrnoll.com%2F")[Microsoft Azure Administrator Associate (Az-104)], #link("https://learn.microsoft.com/api/credentials/share/en-us/joshrnoll/B91E76B27D0D2605?sharingId=236C17A9E269164")[Microsoft Azure Fundamentals (Az-900)]
+
+#strong[CompTIA:] #link("https://www.credly.com/badges/ba45cd0c-fe71-4c6f-bfbf-9b8acdeeff9a/public_url")[CompTIA SecurityX], #link("https://www.credly.com/badges/76550d7d-a270-421c-8436-b0123897fdf8/public_url")[CompTIA Security+], #link("https://www.credly.com/badges/cf3b9100-9b51-488b-84d5-4beb661bee83/public_url")[CompTIA Network+], #link("https://www.credly.com/badges/e5ef6d2e-bedd-48c2-a1d0-7b750d418908/public_url")[CompTIA Project+]
