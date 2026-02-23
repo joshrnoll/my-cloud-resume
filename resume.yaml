@@ -12,10 +12,20 @@ cv:
       - Transitioning Army officer and IT professional seeking a Solutions Architect role, bringing 5+ years of hands-on experience designing and delivering cloud-based systems on Azure, integrating enterprise data platforms, and automating infrastructure. Proven ability to translate complex business requirements into scalable technical architectures and communicate trade-offs to both technical and executive audiences.
 
     experience:
+      - company: Unstructured
+        position: Infrastructure Engineer (SkillBridge)
+        start_date: 2026-02
+        end_date: present
+        highlights:
+          - Supporting cloud infrastructure and tooling powering the platform, including Kubernetes, CI/CD pipelines, and Infrastructure as Code.
+          - Assisting with infrastructure automation, deployment pipelines, and configuration management to improve platform reliability.
+          - Contributing to documentation, runbooks, and operational knowledge sharing to strengthen team practices.
+          - Participating in infrastructure planning discussions and incident reviews to build operational awareness and identify improvements.
+
       - company: US Army
         position: Data and Information Systems Engineer
         start_date: 2021-01
-        end_date: present
+        end_date: 2026-02
         highlights:
           - Architected and delivered an enterprise search solution using Azure Web App Service, Azure AI Search, Azure Data Factory and Azure Data Lake, integrating 22TB of raw data into 2TB of indexed, accessible data and reducing stakeholder data retrieval time from 20+ minutes to seconds.
           - Designed and presented a tactical network and systems architecture to 5+ C-suite stakeholders, enabling buy-in for a major training event supporting over 50 end users and directly aligning technical solutions with key business objectives.
@@ -23,14 +33,6 @@ cv:
           - Directed planning and implementation of a robust off-site network connection, advising key stakeholders and delivering reliable connectivity to over 50 users under challenging operational conditions.
           - Authored and successfully delivered an enterprise cybersecurity policy by aligning technical controls with business priorities, delivering C-suite buy-in and reducing violations by over 75%.
           - Developed and drove adoption of a custom PowerShell module for programmatic user account auditing and management, doubling the speed of service desk ticket closures.
-          - Championed Windows server upgrades by advising leadership on risk and urgency, resulting in C-suite approval and reduced vulnerabilities on 34+ systems.
-
-      - company: US Army
-        position: Executive Assistant
-        start_date: 2020-02
-        end_date: 2021-01
-        highlights:
-          - Led the successful alignment between C-suite leadership and technical teams in executing critical strategic initiatives, including the U.S. Army Arctic Strategy.
 
     volunteering:
       - company: Arrowhead Research
@@ -60,9 +62,6 @@ cv:
 
       - name: "[Homelab Ansible Collection](https://github.com/joshrnoll/ansible-collection-homelab)"
         summary: Published a suite of modular Ansible roles to Ansible Galaxy, enabling repeatable server baselines and automated deployment of containerized services with Tailscale networking, Traefik reverse proxy and Cloudflare DNS integration.
-
-      - name: "[Bastogne Automation Tool](https://github.com/joshrnoll/BAT)"
-        summary: Delivered a scalable, repeatable solution that improved service desk efficiency and user onboarding experience via a custom PowerShell module.
 
     education:
       - label: Webster University
