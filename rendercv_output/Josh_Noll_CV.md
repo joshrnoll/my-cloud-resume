@@ -6,20 +6,20 @@
 
 
 # Summary
-Transitioning Army officer and IT professional seeking a Solutions Architect role, bringing 5+ years of hands-on experience designing and delivering cloud-based systems on Azure, integrating enterprise data platforms, and automating infrastructure. Proven ability to translate complex business requirements into scalable technical architectures and communicate trade-offs to both technical and executive audiences.
+Army officer and IT professional with active TS/SCI clearance and 5+ years of hands-on experience architecting and delivering cloud-based solutions in secure federal environments. Proven track record of translating complex technical requirements into scalable architectures, leading technical evaluations, and advising senior stakeholders on solution design. Deep expertise in CI/CD, DevSecOps, cloud platforms, and infrastructure automation.
 
 # Experience
 ## **Infrastructure Engineer (SkillBridge)**, *Unstructured*
 
 *Feb 2026 – present*
 
-- Supporting cloud infrastructure and tooling powering the platform, including Kubernetes, CI/CD pipelines, and Infrastructure as Code.
+- Supporting cloud infrastructure which powers the platform, including Kubernetes orchestration, CI/CD pipeline optimization, and Infrastructure as Code development.
 
-- Assisting with infrastructure automation, deployment pipelines, and configuration management to improve platform reliability.
+- Assisting with infrastructure automation, deployment pipelines, and configuration management to improve platform reliability and delivery velocity.
 
 - Contributing to documentation, runbooks, and operational knowledge sharing to strengthen team practices.
 
-- Participating in infrastructure planning discussions and incident reviews to build operational awareness and identify improvements.
+- Participating in infrastructure planning discussions and incident reviews to identify delivery improvements and build operational awareness.
 
 
 
@@ -29,15 +29,15 @@ Transitioning Army officer and IT professional seeking a Solutions Architect rol
 
 - Architected and delivered an enterprise search solution using Azure Web App Service, Azure AI Search, Azure Data Factory and Azure Data Lake, integrating 22TB of raw data into 2TB of indexed, accessible data and reducing stakeholder data retrieval time from 20+ minutes to seconds.
 
-- Designed and presented a tactical network and systems architecture to 5+ C-suite stakeholders, enabling buy-in for a major training event supporting over 50 end users and directly aligning technical solutions with key business objectives.
+- Designed and presented technical solution architectures to 5+ senior stakeholders, translating complex requirements into clear proposals, enabling buy-in and directly aligning technical solutions with mission objectives.
 
-- Installed resilient domain architecture across multiple sites, enabling service uptime and reliability in austere, resource-constrained environments.
+- Authored and successfully delivered an enterprise cybersecurity policy by aligning technical security controls with mission priorities, achieving senior leadership buy-in and reducing violations by over 75%.
 
 - Directed planning and implementation of a robust off-site network connection, advising key stakeholders and delivering reliable connectivity to over 50 users under challenging operational conditions.
 
-- Authored and successfully delivered an enterprise cybersecurity policy by aligning technical controls with business priorities, delivering C-suite buy-in and reducing violations by over 75%.
+- Installed resilient domain architecture across multiple sites, enabling service uptime and reliability in secure, resource-constrained environments.
 
-- Developed and drove adoption of a custom PowerShell module for programmatic user account auditing and management, doubling the speed of service desk ticket closures.
+- Developed and drove adoption of a custom PowerShell automation module for programmatic user account auditing and management, doubling the speed of service desk ticket closures.
 
 
 
@@ -46,7 +46,7 @@ Transitioning Army officer and IT professional seeking a Solutions Architect rol
 
 *Jan 2026 – present*
 
-- Delivered a presentation at a company-sponsored prototype showcase on open-source methodology to a panel of 5 industry experts and DoD leaders including the US Army CTO, demonstrating technical leadership and communication skills.
+- Delivered a technical presentation on open-source methodology to a panel of 5 industry experts and DoD leaders including the US Army CTO, demonstrating the ability to lead demos, communicate technical value to senior stakeholders, and advocate for technology adoption.
 
 
 
@@ -56,14 +56,12 @@ Transitioning Army officer and IT professional seeking a Solutions Architect rol
 
 - Architecting a replacement platform using NextJS and Supabase, presenting architectural trade-offs and migration strategy to leadership to enable enhanced extensibility and self-service capabilities.
 
-- Publish weekly book reviews to WordPress-hosted website, supporting content delivery for a curated cybersecurity reading resource.
-
 
 
 # Projects
 ## **[Homelab as Code](https://github.com/joshrnoll/homelab-as-code)**
 
-Architected a GitOps-driven CD pipeline deploying services to Kubernetes on Talos Linux using FluxCD, Tailscale for secure networking, and SOPS/age for secrets management. Demonstrated ability to design, document and implement Infrastructure as Code solutions.
+Architected a GitOps-driven CI/CD pipeline deploying services to Kubernetes on Talos Linux using FluxCD, Tailscale for secure networking, and SOPS/age for encrypted secrets management. Demonstrated end-to-end solution design, documentation, and Infrastructure as Code delivery.
 
 
 
@@ -75,7 +73,7 @@ Designed and deployed a cloud-hosted resume website to Azure Blob Storage using 
 
 ## **[Black Relay](https://github.com/joshrnoll/black-relay)**
 
-Architected a full-stack IoT platform integrating JavaScript, Express, MQTT, and MongoDB to collect, process, and visualize real-time sensor data with a custom classification system, enabling data-driven decision-making in resource-constrained environments.
+Architected a full-stack IoT platform integrating JavaScript, Express, MQTT, and MongoDB with a CI/CD pipeline using GitHub Actions to build and deploy container images, enabling data-driven decision-making in resource-constrained environments.
 
 
 
@@ -95,7 +93,7 @@ Published a suite of modular Ansible roles to Ansible Galaxy, enabling repeatabl
 **US Army Cyber Center of Excellence (CCOE):** Graduate, Information Systems Engineering Course, October 2021
 
 # Skills
-Azure, AWS, Solution Architecture, System Integration, Python, PowerShell, Bash, Ansible, Docker, Kubernetes, FluxCD, Linux, VMWare, Proxmox, JavaScript, TypeScript, React, NextJS, HTML, CSS, Nginx, Traefik, Wireguard, Tailscale
+Solution Architecture, CI/CD, DevSecOps, Git, GitOps, Azure, AWS, Kubernetes, Docker, Ansible, Python, PowerShell, Bash, Linux, FluxCD, VMWare, Proxmox, JavaScript, TypeScript, React, NextJS, HTML, CSS, Nginx, Traefik, Wireguard, Tailscale
 
 # Certifications
 **ISC2:** [Certified Information Systems Security Professional (CISSP)](https://www.credly.com/badges/4df1206d-dc14-4302-83f4-cc5f8e76e2dc/public_url)

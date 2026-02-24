@@ -9,7 +9,7 @@ cv:
       username: joshrnoll
   sections:
     summary:
-      - Army officer and IT professional with 5+ years of hands-on experience architecting and delivering cloud-based solutions in secure federal environments. Proven track record of translating complex technical requirements into scalable architectures, leading technical evaluations, and advising senior stakeholders on solution design. Deep expertise in CI/CD, DevSecOps, cloud platforms, and infrastructure automation.
+      - Army officer and IT professional with active TS/SCI clearance and 5+ years of hands-on experience architecting and delivering cloud-based solutions in secure federal environments. Proven track record of translating complex technical requirements into scalable architectures, leading technical evaluations, and advising senior stakeholders on solution design. Deep expertise in CI/CD, DevSecOps, cloud platforms, and infrastructure automation.
 
     experience:
       - company: Unstructured
@@ -17,7 +17,7 @@ cv:
         start_date: 2026-02
         end_date: present
         highlights:
-          - Supporting cloud infrastructure powering the platform, including Kubernetes orchestration, CI/CD pipeline optimization, and Infrastructure as Code development.
+          - Supporting cloud infrastructure which powers the platform, including Kubernetes orchestration, CI/CD pipeline optimization, and Infrastructure as Code development.
           - Assisting with infrastructure automation, deployment pipelines, and configuration management to improve platform reliability and delivery velocity.
           - Contributing to documentation, runbooks, and operational knowledge sharing to strengthen team practices.
           - Participating in infrastructure planning discussions and incident reviews to identify delivery improvements and build operational awareness.

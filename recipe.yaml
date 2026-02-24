@@ -113,6 +113,11 @@ instructions: |
   4. Install dependencies: `pip install -r requirements.txt`
   5. Run the build: `python make.py`
   6. Verify that both `src/index.html` and `src/resume.pdf` were generated successfully
+  7. Verify that the resume fits one one page:
+    - Check for *.png files in the `rendercv_output` directory. 
+    - Ensure there is only *one* `.png` file. Multiple means that the content took up a second page.
+    - If the content took up a second page, trim the least relevant content and rebuild the resume.
+    - Trim the smallest amount of content possible. Rebuild multiple times to check if necessary.
 
   ### Step 5: Commit Changes
 
