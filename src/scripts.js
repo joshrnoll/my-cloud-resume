@@ -36,7 +36,9 @@ for (item of allHeaders) {
 }
 
 for (item of allBodyElements) {
-  typeWriter(item, 5);
+  if (item.children.length === 0) {
+    typeWriter(item, 5);
+  }
 }
 
 for (item of allAccomplishments) {

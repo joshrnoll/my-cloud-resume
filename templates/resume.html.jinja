@@ -50,15 +50,13 @@
     </p>
   </section>
 
-  <section id="projects">
-    <h2>Technical Projects</h2>
-    <ul>
-      {% for project in cv.sections.projects %}
-      <li>
-        <strong>{{ project.name | md_link | safe }}</strong> <span>| {{ project.summary }}</span>
-      </li>
+  <section id="certifications">
+  <h2>Certifications</h2>
+    <p>
+      {% for cert in cv.sections.certifications %}
+      {{ cert | md_link | safe }}
       {% endfor %}
-    </ul>
+    </p>
   </section>
 
   <section id="experience">
@@ -89,6 +87,17 @@
       {% endfor %}
   </section>
 
+  <section id="projects">
+    <h2>Technical Projects</h2>
+    <ul>
+      {% for project in cv.sections.projects %}
+      <li>
+        <strong>{{ project.name | md_link | safe }}</strong> <span>| {{ project.summary }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
   <section id="education">
     <h2>Education</h2>
     <ul>
@@ -96,17 +105,6 @@
       <li>
         <h3>{{ edu.label }}</h3>
         <h4>{{ edu.details }}</h4>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
-
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      {% for cert in cv.sections.certifications %}
-      <li>
-        <strong>{{ cert.label }}:</strong> {{ cert.details | md_link | safe }}
       </li>
       {% endfor %}
     </ul>

@@ -19,17 +19,21 @@ body {
   color: var(--font-color);
   text-shadow: var(--text-shadow);
   font-family: "Courier New", Courier, monospace;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "header       header"
-    "summary      experience"
-    "tech         experience"
-    "projects     experience"
-    "certs        volunteering"
-    "education    volunteering";
-  grid-auto-rows: min-content;
-  align-items: start;
+
+  /* uncomment below for responsive grid view */
+
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-areas: */
+  /*   "header       header" */
+  /*   "summary      experience" */
+  /*   "tech         experience" */
+  /*   "projects     experience" */
+  /*   "certs        volunteering" */
+  /*   "education    volunteering"; */
+  /* grid-auto-rows: min-content; */
+  /* align-items: start; */
+
   padding: 20px;
 }
 

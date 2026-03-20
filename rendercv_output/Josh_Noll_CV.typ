@@ -8,12 +8,12 @@
   top-note: [ #emph[Last updated in Feb 2026] ],
   locale-catalog-language: "en",
   page-size: "us-letter",
-  page-top-margin: 0.25in,
-  page-bottom-margin: 0.25in,
-  page-left-margin: 0.25in,
-  page-right-margin: 0.25in,
+  page-top-margin: 0.15in,
+  page-bottom-margin: 0.15in,
+  page-left-margin: 0.5in,
+  page-right-margin: 0.5in,
   page-show-footer: false,
-  page-show-top-note: true,
+  page-show-top-note: false,
   colors-body: rgb(0, 0, 0),
   colors-name: rgb(0, 0, 0),
   colors-headline: rgb(0, 0, 0),
@@ -22,18 +22,18 @@
   colors-links: rgb(0, 0, 0),
   colors-footer: rgb(128, 128, 128),
   colors-top-note: rgb(128, 128, 128),
-  typography-line-spacing: 0.2em,
+  typography-line-spacing: 0.45em,
   typography-alignment: "justified",
   typography-date-and-location-column-alignment: right,
-  typography-font-family-body: "XCharter",
-  typography-font-family-name: "XCharter",
-  typography-font-family-headline: "XCharter",
-  typography-font-family-connections: "XCharter",
-  typography-font-family-section-titles: "XCharter",
-  typography-font-size-body: 10pt,
+  typography-font-family-body: "Courier New",
+  typography-font-family-name: "Courier New",
+  typography-font-family-headline: "Courier New",
+  typography-font-family-connections: "Courier New",
+  typography-font-family-section-titles: "Courier New",
+  typography-font-size-body: 10.5pt,
   typography-font-size-name: 25pt,
-  typography-font-size-headline: 10pt,
-  typography-font-size-connections: 10pt,
+  typography-font-size-headline: 11pt,
+  typography-font-size-connections: 11pt,
   typography-font-size-section-titles: 1.2em,
   typography-small-caps-name: false,
   typography-small-caps-headline: false,
@@ -47,9 +47,9 @@
   links-show-external-link-icon: true,
   header-alignment: center,
   header-photo-width: 3.5cm,
-  header-space-below-name: 0.3cm,
-  header-space-below-headline: 0.2cm,
-  header-space-below-connections: 0.2cm,
+  header-space-below-name: 0.35cm,
+  header-space-below-headline: 0.08cm,
+  header-space-below-connections: 0.1cm,
   header-connections-hyperlink: true,
   header-connections-show-icons: true,
   header-connections-display-urls-instead-of-usernames: true,
@@ -57,11 +57,11 @@
   header-connections-space-between-connections: 0.5cm,
   section-titles-type: "with_full_line",
   section-titles-line-thickness: 0.5pt,
-  section-titles-space-above: 0.3cm,
-  section-titles-space-below: 0.15cm,
+  section-titles-space-above: 0.5cm,
+  section-titles-space-below: 0.08cm,
   sections-allow-page-break: true,
   sections-space-between-text-based-entries: 0.1em,
-  sections-space-between-regular-entries: 0.3em,
+  sections-space-between-regular-entries: 0.25em,
   entries-date-and-location-width: 4.15cm,
   entries-side-space: 0cm,
   entries-space-between-columns: 0.1cm,
@@ -72,8 +72,8 @@
   entries-highlights-bullet:  "◦" ,
   entries-highlights-nested-bullet:  "-" ,
   entries-highlights-space-left: 0cm,
-  entries-highlights-space-above: 0.08cm,
-  entries-highlights-space-between-items: 0.08cm,
+  entries-highlights-space-above: 0.04cm,
+  entries-highlights-space-between-items: 0.04cm,
   entries-highlights-space-between-bullet-and-text: 0.3em,
   date: datetime(
     year: 2026,
@@ -90,80 +90,95 @@
   [#link("https://linkedin.com/in/joshrnoll", icon: false, if-underline: false, if-color: false)[#connection-with-icon("linkedin")[linkedin.com\/in\/joshrnoll]]],
   [#link("https://github.com/joshrnoll", icon: false, if-underline: false, if-color: false)[#connection-with-icon("github")[github.com\/joshrnoll]]],
 )
+#v(0.5cm)
+#connections(
+)
 
 
 == Summary
 
-Passionate, results-driven problem solver with expertise in cloud infrastructure, automation, containerization and system integration. Proven ability to translate technical requirements into customer-centric solutions. Military leader with a history of driving digital transformation, delivering stakeholder-aligned outcomes, and communicating value to both technical and executive audiences.
+Cloud\/DevOps Engineer specializing in Kubernetes, infrastructure automation, and secure cloud platforms supporting enterprise and mission environments. Active TS\/SCI clearance; MA in IT Management; CISSP, SecurityX, CCNA certified. Driven to build durable solutions to long-standing pain points, bridging engineering and leadership to deliver measurable outcomes.
 
 == Skills
 
-Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS, JavaScript, TypeScript, React, Vite, NextJS, Jest, Tailwind, Docker, Kubernetes, FluxCD, VMWare, Proxmox, Wireguard, Tailscale, Nginx, Traefik
+Azure | AWS | Linux | PowerShell | Bash | Ansible | Python | HTML | CSS | JavaScript | TypeScript | React | Vite | NextJS | Jest | Tailwind | Docker | Kubernetes | Helm | FluxCD | ArgoCD | VMWare | Proxmox | Wireguard | Tailscale | Nginx | Traefik
 
 == Certifications
 
-#strong[ISC2:] #link("https://www.credly.com/badges/4df1206d-dc14-4302-83f4-cc5f8e76e2dc/public_url")[Certified Information Systems Security Professional (CISSP)]
-
-#strong[Cisco:] #link("https://www.credly.com/badges/218f2074-76ba-4d60-b0d5-5bc83c515052/public_url")[Cisco Certified Networking Associate (CCNA)]
-
-#strong[Azure:] #link("https://learn.microsoft.com/en-us/users/joshrnoll/credentials/A419160A7DC41331?ref=https%3A%2F%2Fjoshrnoll.com%2F")[Microsoft Azure Administrator Associate (Az-104)], #link("https://learn.microsoft.com/api/credentials/share/en-us/joshrnoll/B91E76B27D0D2605?sharingId=236C17A9E269164")[Microsoft Azure Fundamentals (Az-900)]
-
-#strong[CompTIA:] #link("https://www.credly.com/badges/ba45cd0c-fe71-4c6f-bfbf-9b8acdeeff9a/public_url")[CompTIA SecurityX], #link("https://www.credly.com/badges/76550d7d-a270-421c-8436-b0123897fdf8/public_url")[CompTIA Security+], #link("https://www.credly.com/badges/cf3b9100-9b51-488b-84d5-4beb661bee83/public_url")[CompTIA Network+], #link("https://www.credly.com/badges/e5ef6d2e-bedd-48c2-a1d0-7b750d418908/public_url")[CompTIA Project+]
+#link("https://www.credly.com/badges/4df1206d-dc14-4302-83f4-cc5f8e76e2dc/public_url")[CISSP] | #link("https://www.credly.com/badges/218f2074-76ba-4d60-b0d5-5bc83c515052/public_url")[CCNA] | #link("https://learn.microsoft.com/en-us/users/joshrnoll/credentials/A419160A7DC41331?ref=https%3A%2F%2Fjoshrnoll.com%2F")[Az-104] | #link("https://learn.microsoft.com/api/credentials/share/en-us/joshrnoll/B91E76B27D0D2605?sharingId=236C17A9E269164")[Az-900] | #link("https://www.credly.com/badges/ba45cd0c-fe71-4c6f-bfbf-9b8acdeeff9a/public_url")[SecurityX] | #link("https://www.credly.com/badges/76550d7d-a270-421c-8436-b0123897fdf8/public_url")[Security+] | #link("https://www.credly.com/badges/cf3b9100-9b51-488b-84d5-4beb661bee83/public_url")[Network+] | #link("https://www.credly.com/badges/e5ef6d2e-bedd-48c2-a1d0-7b750d418908/public_url")[Project+]
 
 == Experience
 
-#regular-entry(
+  #regular-entry(
   [
-    #strong[Data and Information Systems Engineer], #emph[US Army]
+    #strong[Infrastructure Engineer], Unstructured (#emph[Feb 2026 – present])
 
   ],
   [
-    #emph[Jan 2021 – present]
-
   ],
   main-column-second-row: [
-    - Orchestrated and delivered an AI-powered search solution using Azure AI Search in collaboration with cross-functional teams, improving accessibility of over 22TB of data and shortening stakeholder decision-making time by up to 15\%.
+    - Migrated 8 internal platform applications from Nginx ingress to Traefik, enforcing mTLS authentication across all services to prevent unauthorized cluster access.
 
-    - Developed and drove adoption of a custom PowerShell module for programmatic user account auditing and management, doubling the speed of service desk ticket closures.
-
-    - Recognized upward trend in cybersecurity violations across the organization due to a lack of policy, presenting both the issue and recommendations to C-suite leadership in 3 monthly board meetings.
-
-    - Authored and successfully delivered an enterprise cybersecurity policy by aligning technical controls with business priorities, delivering C-suite buy-in and reducing violations by over 75\%.
-
-    - Championed Windows server upgrades by advising leadership on risk and urgency, resulting in C-suite approval and reduced vulnerabilities on 34+ systems
-
-    - Designed and presented a tactical network and systems architecture to 5+ C-suite stakeholders, enabling buy-in for a major training event supporting over 50 end users and directly aligning technical innovation with key business objectives.
-
-    - Directed planning and implementation of a robust off-site network connection, advising key stakeholders and delivering reliable connectivity to over 50 users under challenging operational conditions.
+    - Prototyping an AI-driven internal documentation site using Docusaurus, FastAPI, ChromaDB and Anthropic\/OpenAI API integrations for RAG, receiving positive feedback from stakeholders in initial demos.
 
   ],
 )
 
-#regular-entry(
+  #regular-entry(
   [
-    #strong[Executive Assistant], #emph[US Army]
+    #strong[Data and Information Systems Engineer], US Army (#emph[Jan 2021 – Jan 2026])
 
   ],
   [
-    #emph[Feb 2020 – Jan 2021]
-
   ],
   main-column-second-row: [
-    - Led the successful alignment between C-suite leadership and technical teams in executing critical strategic initiatives, including the U.S. Army Arctic Strategy.
+    - Delivered an AI-powered search solution using Azure AI Search with cross-functional teams, improving accessibility of 22TB+ of data and cutting information retrieval time from 20+ minutes to under 10 seconds.
+
+    - Identified a chronic gap in user account management and built a custom PowerShell module from scratch, increasing service desk ticket closure speed by 100\%.
+
+    - Authored an enterprise cybersecurity policy aligning technical controls with business priorities; secured C-suite buy-in and reduced violations by 75\%+.
+
+    - Designed and presented a tactical network\/systems architecture to 5+ C-suite stakeholders, enabling buy-in for a training event supporting 50+ end users.
+
+    - Deployed resilient Active Directory domain architecture across 8 geographically dispersed sites, maintaining service continuity for 150+ users in austere tactical environments.
+
+  ],
+)
+
+  #regular-entry(
+  [
+    #strong[Executive Assistant], US Army (#emph[Feb 2020 – Jan 2021])
+
+  ],
+  [
+  ],
+  main-column-second-row: [
+    - Bridged C-suite leadership and technical teams in drafting and publishing the U.S. Army Arctic Strategy, a foundational initiative driving the Army's return to Arctic dominance amid great power competition.
+
+  ],
+)
+
+  #regular-entry(
+  [
+    #strong[Platoon Leader], US Army (#emph[Mar 2019 – Nov 2020])
+
+  ],
+  [
+  ],
+  main-column-second-row: [
+    - Commanded a 22-person Cavalry platoon through a successful combat training center rotation; rated \#1 of all platoon leaders in the squadron; accountable for \$1M+ in equipment.
 
   ],
 )
 
 == Volunteering
 
-#regular-entry(
+  #regular-entry(
   [
-    #strong[Director of Programming], #emph[Arrowhead Research]
+    #strong[Director of Programming], Arrowhead Research (#emph[Jan 2026 – present])
 
   ],
   [
-    #emph[Jan 2026 – present]
-
   ],
   main-column-second-row: [
     - Delivered a presentation at a company-sponsored prototype showcase on open-source methodology to a panel of 5 industry experts and DoD leaders including the US Army CTO, demonstrating technical leadership and communication skills.
@@ -171,19 +186,15 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
   ],
 )
 
-#regular-entry(
+  #regular-entry(
   [
-    #strong[Web Developer], #emph[Cybersecurity Canon]
+    #strong[Web Developer], Cybersecurity Canon (#emph[Nov 2025 – present])
 
   ],
   [
-    #emph[Nov 2025 – present]
-
   ],
   main-column-second-row: [
-    - Publish weekly book reviews to WordPress-hosted website, supporting content delivery for a curated cybersecurity reading resource.
-
-    - Developing a prototype website platform using modern web technologies to replace WordPress infrastructure, communicating architectural benefits and trade-offs to leadership to enable enhanced extensibility.
+    - Prototyping a modern platform to replace long-deferred WordPress infrastructure; communicating architectural trade-offs to leadership to enable enhanced extensibility.
 
   ],
 )
@@ -198,20 +209,7 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
   [
   ],
   main-column-second-row: [
-    #summary[Developed a full-stack IoT platform using JavaScript, Express, MQTT, and MongoDB to collect, process, and visualize real-time sensor data, enabling data-driven decision-making in resource-constrained environments.]
-
-  ],
-)
-
-  #regular-entry(
-  [
-    #strong[#link("https://resume.joshrnoll.com")[My Cloud Resume]]
-
-  ],
-  [
-  ],
-  main-column-second-row: [
-    #summary[Designed and developed a dynamic personal resume website from scratch using HTML, CSS, and JavaScript, showcasing technical skills and professional experience. Automated deployment to cloud storage account using GitHub actions, displaying hands-on experience with CI\/CD concepts and tooling.]
+    #summary[Full-stack IoT platform built with JavaScript, Express, MQTT, MongoDB. Collects and visualizes real-time sensor data in resource-constrained environments.]
 
   ],
 )
@@ -224,43 +222,17 @@ Azure, AWS, Linux, Fedora, Ubuntu, PowerShell, Bash, Ansible, Python, HTML, CSS,
   [
   ],
   main-column-second-row: [
-    #summary[Built a CD pipeline for homelab services, rapidly testing and deploying services to Kubernetes on Talos Linux in support of multiple active users. Demonstrated ability to build and document Infrastructure as Code solutions.]
-
-  ],
-)
-
-  #regular-entry(
-  [
-    #strong[#link("https://github.com/joshrnoll/ansible-collection-homelab")[Homelab Ansible Collection]]
-
-  ],
-  [
-  ],
-  main-column-second-row: [
-    #summary[Published a suite of modular Ansible roles to Ansible Galaxy, enabling repeatable server baselines and deployment of Docker containers onto a Tailscale network. Demonstrated ability to deliver reusable, community-facing infrastructure solutions.]
-
-  ],
-)
-
-  #regular-entry(
-  [
-    #strong[#link("https://github.com/joshrnoll/BAT")[Bastogne Automation Tool]]
-
-  ],
-  [
-  ],
-  main-column-second-row: [
-    #summary[Delivered a scalable, repeatable solution that improved service desk efficiency and user onboarding experience via a custom PowerShell module.]
+    #summary[CD pipeline for homelab services; deploys to Kubernetes on Talos Linux supporting multiple active users via GitOps\/IaC.]
 
   ],
 )
 
 == Education
 
-#strong[Galvanize:] Software Development Immersive (SDI), September 2025
+#strong[Webster University:] MA, Information Technology Management #emph[(May 2022)]
 
-#strong[Webster University:] MA, Information Technology Management, May 2022
+#strong[University of Wisconsin - Eau Claire:] BA, German #emph[(May 2017)]
 
-#strong[US Army Cyber Center of Excellence (CCOE):] Graduate, Information Systems Engineering Course, October 2021
+#strong[Galvanize:] Software Development Immersive #emph[(September 2025)]
 
-#strong[University of Wisconsin - Eau Claire:] BA, German - Liberal Arts, May 2017
+#strong[US Army Cyber Center of Excellence (CCOE):] Graduate, Information Systems Engineering Course #emph[(October 2021)]
