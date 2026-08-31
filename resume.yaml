@@ -66,7 +66,8 @@ cv:
         start_date: 2026-01
         end_date: present
         highlights:
-          - Lead Black Relay, the organization’s 2026 engineering initiative, directing program execution and technical development for a full-stack IoT platform that collects and visualizes real-time sensor data in resource-constrained environments.
+          - "Lead Black Relay 2026: Safehouse Systems, a four-month engineering initiative to build a portable, survivable operating stack for temporary sites across fabrication, detection, survivability, and TAK teams."
+          - Designed, built, and deployed the Arrowhead Research website and the Black Relay 2026 program site, translating the organization’s mission, programs, application flow, and field-event requirements into public-facing web experiences.
           - Delivered a presentation at a company-sponsored prototype showcase on open-source methodology to a panel of 5 industry experts and DoD leaders including the US Army CTO, demonstrating technical leadership and communication skills.
 
       - company: Cybersecurity Canon
@@ -77,8 +78,8 @@ cv:
           - Prototyping a modern platform to replace long-deferred WordPress infrastructure; communicating architectural trade-offs to leadership to enable enhanced extensibility.
 
     projects:
-      - name: "[Black Relay](https://github.com/joshrnoll/black-relay)"
-        summary: Full-stack IoT platform built with JavaScript, Express, MQTT, and MongoDB; collects, classifies, and visualizes real-time sensor data to support decisions in resource-constrained environments.
+      - name: "[Black Relay 2026: Safehouse Systems](https://arrowheadresearch.org/black-relay)"
+        summary: Designed and deployed the public program site for a four-month field-engineering initiative building a portable, survivable safehouse operating stack for temporary sites.
 
       - name: "[Homelab as Code](https://github.com/joshrnoll/homelab-as-code)"
         summary: GitOps/IaC platform deploying homelab services to Kubernetes on Talos Linux; uses FluxCD, Tailscale, SOPS, and age for secure multi-user operations and secret management.
@@ -89,8 +90,8 @@ cv:
       - name: "[Personal Website](https://joshrnoll.com)"
         summary: Hugo-based personal site deployed through GitHub Actions to Azure Storage and secured behind Cloudflare HTTPS, with a technical blog and public notes.
 
-      - name: "[Convoy Connect](https://github.com/joshrnoll/convoy-connect)"
-        summary: Full-stack group-capstone application built with JavaScript, Express, React, Node.js, and PostgreSQL during the Galvanize Software Development Immersive.
+      - name: "[pi-teach](https://github.com/joshrnoll/pi-teach)"
+        summary: Published Pi extension that turns agent sessions into interactive HTML classrooms with highlight-to-ask explanations, persistent contextual Q&A, and agent-graded quizzes.
 
       - name: "[Traefik Install Playbook](https://github.com/joshrnoll/ansible-playbook-traefik-tailscale)"
         summary: Ansible playbook that automates Traefik deployment with Tailscale and Traefik Kop across multiple hosts.
