@@ -20,7 +20,7 @@ cv:
     experience:
       - company: Unstructured
         position: Infrastructure Engineer
-        start_date: 2026-06
+        start_date: 2026-02
         end_date: present
         highlights:
           - Designed and delivered versioned, immutable dedicated-instance infrastructure configuration using Kubernetes CRDs, Pulumi, Temporal, admission controls, and operator reconciliation; enabled teams to canary changes on individual instances before fleet-wide rollout.
@@ -34,14 +34,6 @@ cv:
           - Assessed a 23-instance infrastructure fleet using live status and deployment previews, separating harmless refresh drift from material backlog and creating a risk-based maintenance and migration plan.
           - Made infrastructure drift state self-healing after deployments by updating the operator to re-check and clear stale verdicts immediately rather than waiting up to 24 hours.
           - Created authenticated, live documentation previews for every content pull request, removing the need for reviewers to run Docusaurus locally.
-
-      - company: Unstructured
-        position: Infrastructure Engineering Intern (SkillBridge)
-        start_date: 2026-02
-        end_date: 2026-05
-        highlights:
-          - Supported cloud infrastructure and tooling for the platform, including Kubernetes, CI/CD pipelines, and Infrastructure as Code.
-          - Contributed to infrastructure automation, deployment pipelines, configuration management, and operational documentation.
 
       - company: US Army
         position: Data and Information Systems Engineer
