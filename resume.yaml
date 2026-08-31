@@ -104,8 +104,8 @@ cv:
 design:
   theme: engineeringresumes
   page:
-    top_margin: "0.15in"
-    bottom_margin: "0.15in"
+    top_margin: "0.5in"
+    bottom_margin: "0.5in"
     left_margin: "0.5in"
     right_margin: "0.5in"
     show_top_note: false
