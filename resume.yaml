@@ -132,6 +132,7 @@ design:
     space_above: "0.5cm"
     space_below: "0.08cm"
   entries:
+    allow_page_break: true
     highlights:
       bullet: "◦"
       nested_bullet: "-"
