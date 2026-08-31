@@ -20,11 +20,19 @@ cv:
     experience:
       - company: Unstructured
         position: Infrastructure Engineer
-        start_date: 2026-02
+        start_date: 2026-06
         end_date: present
         highlights:
           - Migrated 8 internal platform applications from Nginx ingress to Traefik, enforcing mTLS authentication across all services to prevent unauthorized cluster access.
           - Prototyping an AI-driven internal documentation site using Docusaurus, FastAPI, ChromaDB and Anthropic/OpenAI API integrations for RAG, receiving positive feedback from stakeholders in initial demos.
+
+      - company: Unstructured
+        position: Infrastructure Engineering Intern (SkillBridge)
+        start_date: 2026-02
+        end_date: 2026-05
+        highlights:
+          - Supported cloud infrastructure and tooling for the platform, including Kubernetes, CI/CD pipelines, and Infrastructure as Code.
+          - Contributed to infrastructure automation, deployment pipelines, configuration management, and operational documentation.
 
       - company: US Army
         position: Data and Information Systems Engineer
@@ -43,13 +51,6 @@ cv:
         end_date: 2021-01
         highlights:
           - Bridged C-suite leadership and technical teams in drafting and publishing the U.S. Army Arctic Strategy, a foundational initiative driving the Army's return to Arctic dominance amid great power competition.
-
-      - company: US Army
-        position: Platoon Leader
-        start_date: 2019-03
-        end_date: 2020-11
-        highlights:
-          - "Commanded a 22-person Cavalry platoon through a successful combat training center rotation; rated #1 of all platoon leaders in the squadron; accountable for $1M+ in equipment."
 
     volunteering:
       - company: Arrowhead Research
