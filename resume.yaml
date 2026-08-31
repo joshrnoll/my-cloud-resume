@@ -29,7 +29,7 @@ cv:
           - Removed EKS upgrade blockers across 21 AWS clusters by making Kubernetes versions configurable, hardening cross-cloud validation, and pinning managed node groups to the control-plane version.
           - Authored 162 pull requests across 11 repositories, with 140 merged, and reviewed at least 297 pull requests across infrastructure, release engineering, internal documentation, and developer tooling.
           - Completed the infrastructure ingress migration from Nginx to Traefik, including removal of obsolete controllers and resources.
-          - Built and operationalized Symphony, an AI engineering orchestrator with automated issue workers, CI/PR monitoring, re-review after blocker fixes, an append-only event ledger, a live dashboard, and a terminal-native TUI; production validation included 321 passing tests.
+          - Built and operationalized an AI engineering orchestrator with automated issue workers, CI/PR monitoring, re-review after blocker fixes, an append-only event ledger, a live dashboard, and a terminal-native TUI; production validation included 321 passing tests.
           - Led a platform release through late-stage failures, halted an unsafe promotion, corrected staging/production plugin divergence, reran production promotion, and confirmed end-to-end validation before release.
           - Assessed a 23-instance infrastructure fleet using live status and deployment previews, separating harmless refresh drift from material backlog and creating a risk-based maintenance and migration plan.
           - Made infrastructure drift state self-healing after deployments by updating the operator to re-check and clear stale verdicts immediately rather than waiting up to 24 hours.
