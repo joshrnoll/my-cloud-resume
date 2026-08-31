@@ -23,8 +23,17 @@ cv:
         start_date: 2026-06
         end_date: present
         highlights:
-          - Migrated 8 internal platform applications from Nginx ingress to Traefik, enforcing mTLS authentication across all services to prevent unauthorized cluster access.
-          - Prototyping an AI-driven internal documentation site using Docusaurus, FastAPI, ChromaDB and Anthropic/OpenAI API integrations for RAG, receiving positive feedback from stakeholders in initial demos.
+          - Designed and delivered versioned, immutable dedicated-instance infrastructure configuration using Kubernetes CRDs, Pulumi, Temporal, admission controls, and operator reconciliation; enabled teams to canary changes on individual instances before fleet-wide rollout.
+          - Built and productionized an Internal Docs platform with Docusaurus, FastAPI, Helm, Docker, Okta OIDC, local search, CI/CD, and an authenticated MCP server; migrated 189 pages to Git-backed durable storage and automated updates across 199 repository sessions.
+          - Diagnosed and fixed production-scale operator-console performance bottlenecks, reducing API payloads by 97.6% and 91% and bringing all seven tested navigations to 323 ms or less.
+          - Removed EKS upgrade blockers across 21 AWS clusters by making Kubernetes versions configurable, hardening cross-cloud validation, and pinning managed node groups to the control-plane version.
+          - Authored 162 pull requests across 11 repositories, with 140 merged, and reviewed at least 297 pull requests across infrastructure, release engineering, internal documentation, and developer tooling.
+          - Completed the infrastructure ingress migration from Nginx to Traefik, including removal of obsolete controllers and resources.
+          - Built and operationalized Symphony, an AI engineering orchestrator with automated issue workers, CI/PR monitoring, re-review after blocker fixes, an append-only event ledger, a live dashboard, and a terminal-native TUI; production validation included 321 passing tests.
+          - Led a platform release through late-stage failures, halted an unsafe promotion, corrected staging/production plugin divergence, reran production promotion, and confirmed end-to-end validation before release.
+          - Assessed a 23-instance infrastructure fleet using live status and deployment previews, separating harmless refresh drift from material backlog and creating a risk-based maintenance and migration plan.
+          - Made infrastructure drift state self-healing after deployments by updating the operator to re-check and clear stale verdicts immediately rather than waiting up to 24 hours.
+          - Created authenticated, live documentation previews for every content pull request, removing the need for reviewers to run Docusaurus locally.
 
       - company: Unstructured
         position: Infrastructure Engineering Intern (SkillBridge)
@@ -54,25 +63,38 @@ cv:
 
     volunteering:
       - company: Arrowhead Research
-        position: Director of Programming
+        position: Programming Director
         start_date: 2026-01
         end_date: present
         highlights:
+          - Lead Black Relay, the organization’s 2026 engineering initiative, directing program execution and technical development for a full-stack IoT platform that collects and visualizes real-time sensor data in resource-constrained environments.
           - Delivered a presentation at a company-sponsored prototype showcase on open-source methodology to a panel of 5 industry experts and DoD leaders including the US Army CTO, demonstrating technical leadership and communication skills.
 
       - company: Cybersecurity Canon
         position: Web Developer
         start_date: 2025-11
-        end_date: present
+        end_date: 2026-05
         highlights:
           - Prototyping a modern platform to replace long-deferred WordPress infrastructure; communicating architectural trade-offs to leadership to enable enhanced extensibility.
 
     projects:
       - name: "[Black Relay](https://github.com/joshrnoll/black-relay)"
-        summary: Full-stack IoT platform built with JavaScript, Express, MQTT, MongoDB. Collects and visualizes real-time sensor data in resource-constrained environments.
+        summary: Full-stack IoT platform built with JavaScript, Express, MQTT, and MongoDB; collects, classifies, and visualizes real-time sensor data to support decisions in resource-constrained environments.
 
       - name: "[Homelab as Code](https://github.com/joshrnoll/homelab-as-code)"
-        summary: CD pipeline for homelab services; deploys to Kubernetes on Talos Linux supporting multiple active users via GitOps/IaC.
+        summary: GitOps/IaC platform deploying homelab services to Kubernetes on Talos Linux; uses FluxCD, Tailscale, SOPS, and age for secure multi-user operations and secret management.
+
+      - name: "[Homelab Ansible Collection](https://github.com/joshrnoll/ansible-collection-homelab)"
+        summary: Published Ansible Galaxy roles that automate Linux server hardening, Docker installation, containerized service deployment, Tailscale networking, Traefik reverse proxying, and Cloudflare DNS records.
+
+      - name: "[Personal Website](https://joshrnoll.com)"
+        summary: Hugo-based personal site deployed through GitHub Actions to Azure Storage and secured behind Cloudflare HTTPS, with a technical blog and public notes.
+
+      - name: "[Convoy Connect](https://github.com/joshrnoll/convoy-connect)"
+        summary: Full-stack group-capstone application built with JavaScript, Express, React, Node.js, and PostgreSQL during the Galvanize Software Development Immersive.
+
+      - name: "[Traefik Install Playbook](https://github.com/joshrnoll/ansible-playbook-traefik-tailscale)"
+        summary: Ansible playbook that automates Traefik deployment with Tailscale and Traefik Kop across multiple hosts.
 
     education:
       - label: Webster University
@@ -98,7 +120,7 @@ design:
   typography:
     font_family: Courier New
     font_size:
-      body: "10.5pt"
+      body: "11.5pt"
       name: "25pt"
       headline: "11pt"
       connections: "11pt"
