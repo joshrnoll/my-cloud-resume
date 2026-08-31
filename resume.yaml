@@ -88,7 +88,7 @@ cv:
         summary: Published Ansible Galaxy roles that automate Linux server hardening, Docker installation, containerized service deployment, Tailscale networking, Traefik reverse proxying, and Cloudflare DNS records.
 
       - name: "[Personal Website](https://joshrnoll.com)"
-        summary: Hugo-based personal site deployed through GitHub Actions to Azure Storage and secured behind Cloudflare HTTPS, with a technical blog and public notes.
+        summary: Astro-based personal site deployed through GitHub Actions to Azure Storage and secured behind Cloudflare HTTPS, with a technical blog and public notes.
 
       - name: "[pi-teach](https://github.com/joshrnoll/pi-teach)"
         summary: Published Pi extension that turns agent sessions into interactive HTML classrooms with highlight-to-ask explanations, persistent contextual Q&A, and agent-graded quizzes.
