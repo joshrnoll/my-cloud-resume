@@ -75,7 +75,7 @@ cv:
         start_date: 2025-11
         end_date: 2026-05
         highlights:
-          - Prototyping a modern platform to replace long-deferred WordPress infrastructure; communicating architectural trade-offs to leadership to enable enhanced extensibility.
+          - Prototyped a modern platform to replace long-deferred WordPress infrastructure; communicated architectural trade-offs to leadership to enable enhanced extensibility.
 
     projects:
       - name: "[Black Relay 2026: Safehouse Systems](https://arrowheadresearch.org/black-relay)"
