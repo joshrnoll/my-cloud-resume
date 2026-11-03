@@ -124,17 +124,25 @@ function downloadPDF() {
     }
     if (done) return;
 
-    // Paste the rest of the resume source into the buffer
-    await showKeys('"+p', 500);
+    // `p` in NORMAL mode: paste the rest of the resume source from the
+    // register below the cursor line in one go, like a real Neovim paste.
+    await showKeys("p", 400);
+    if (done) return;
     const rest = lines.slice(header.length);
-    for (const line of rest) {
-      if (done) return;
+    const frag = document.createDocumentFragment();
+    rest.forEach((line) => {
       line.lc.textContent = line.text;
-      content.appendChild(line.el);
-      setActive(line);
-      await sleep(28);
-    }
-    await sleep(400);
+      frag.appendChild(line.el);
+    });
+    content.appendChild(frag);
+    // cursor lands on the first pasted line; Neovim reports the line count
+    setActive(rest[0]);
+    keysEl.classList.add("msg");
+    keysEl.textContent = `${rest.length} more lines`;
+    await sleep(1400);
+    keysEl.textContent = "";
+    keysEl.classList.remove("msg");
+    if (done) return;
 
     // gg, then :Preview
     content.scrollTop = 0;

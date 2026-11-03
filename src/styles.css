@@ -447,6 +447,7 @@ html.nvim-intro .nvim-wrap {
 .nvim-file { color: var(--fg); }
 .nvim-pos { color: var(--comment); margin-left: auto; }
 .nvim-keys { color: var(--orange); font-weight: 700; min-width: 3em; text-align: right; }
+.nvim-keys.msg { color: var(--fg); font-weight: 400; }
 
 .nvim-skip {
   margin-top: 0.75rem;
