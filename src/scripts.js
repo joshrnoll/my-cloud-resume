@@ -27,9 +27,10 @@ function getElementsWithNoChildren() {
   return elementsWithNoChildren;
 }
 
-let allHeaders = document.querySelectorAll("h1, h2, h3, h4");
-let allBodyElements = document.querySelectorAll("a, span, p");
-let allAccomplishments = document.querySelectorAll(".accomplishments");
+// Only animate the resume content, not the nav bar or status bar
+let allHeaders = document.querySelectorAll("main h1, main h2, main h3, main h4");
+let allBodyElements = document.querySelectorAll("main a, main span, main p");
+let allAccomplishments = document.querySelectorAll("main .accomplishments");
 
 for (item of allHeaders) {
   typeWriter(item, 75);
@@ -44,3 +45,15 @@ for (item of allBodyElements) {
 for (item of allAccomplishments) {
   typeWriter(item, 5);
 }
+
+// Status bar scroll percentage (mirrors joshrnoll.com's StatusBar)
+const scrollEl = document.getElementById("sb-scroll");
+function updateScroll() {
+  if (!scrollEl) return;
+  const total = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = total > 0 ? Math.round((window.scrollY / total) * 100) : 100;
+  scrollEl.textContent = `${pct}%`;
+}
+window.addEventListener("scroll", updateScroll, { passive: true });
+window.addEventListener("resize", updateScroll);
+updateScroll();

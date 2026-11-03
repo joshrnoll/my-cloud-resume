@@ -3,65 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://joshrnoll.com/favicon/favicon.ico" sizes="any">
+  <link rel="preload" href="./fonts/jetbrains-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./print.css" media="print">
   <script defer src="scripts.js"></script>
   <title>Josh Noll's Resume</title>
 </head>
 <body>
-  <header>
-    <section id="header">
-      <h1>{{ cv.name }}</h1>
-      <div class="button-group">
-        <button type="button" onclick="window.location.href='{{ cv.website }}';">
-          My Website
-        </button>
-        {% for social in cv.social_networks %}
-        {% if social.network == 'LinkedIn' %}
-        <button type="button" onclick="window.location.href='https://linkedin.com/in/{{ social.username }}';">
-          My LinkedIn
-        </button>
-        {% elif social.network == 'GitHub' %}
-        <button type="button" onclick="window.location.href='https://github.com/{{ social.username }}';">
-          My GitHub
-        </button>
-        {% endif %}
-        {% endfor %}
-      </div>
-      <a id="pdfview" href="resume.pdf">View this resume as a PDF</a>
+  <nav class="navbar" aria-label="Primary navigation">
+    <div class="container navbar-inner">
+      <a href="{{ cv.website }}" class="brand">{{ cv.name }}</a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="{{ cv.website }}/">Home</a></li>
+        <li><a class="nav-link" href="{{ cv.website }}/blog/">Blog</a></li>
+        <li><a class="nav-link" href="{{ cv.website }}/notes/">Notes</a></li>
+        <li><a class="nav-link" href="{{ cv.website }}/projects/">Projects</a></li>
+        <li><a class="nav-link" href="{{ cv.website }}/homelab/">Homelab</a></li>
+        <li><a class="nav-link active" href="./" aria-current="page">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container resume">
+    <header>
+      <section id="header">
+        <h1>{{ cv.name }}</h1>
+        <div class="button-group">
+          <a class="cta" href="{{ cv.website }}">My Website</a>
+          {% for social in cv.social_networks %}
+          {% if social.network == 'LinkedIn' %}
+          <a class="cta" href="https://linkedin.com/in/{{ social.username }}">My LinkedIn</a>
+          {% elif social.network == 'GitHub' %}
+          <a class="cta" href="https://github.com/{{ social.username }}">My GitHub</a>
+          {% endif %}
+          {% endfor %}
+        </div>
+        <a id="pdfview" class="cta cta--pdf" href="resume.pdf">View this resume as a PDF</a>
+      </section>
+    </header>
+
+    <section id="summary">
+      <h2>Summary</h2>
+      <p>
+        {%- for item in cv.sections.summary -%}
+          {{ item }}
+        {%- endfor-%}
+      </p>
     </section>
-  </header>
 
-  <section id="summary">
-    <h2>Summary</h2>
-    <p>
-      {%- for item in cv.sections.summary -%}
-        {{ item }}
-      {%- endfor-%}
-    </p>
-  </section>
+    <section id="technologies">
+      <h2>Technologies</h2>
+      <div class="badges">
+        {%- for skill in cv.sections.skills -%}
+        {%- for tech in skill.split('|') %}
+        <span class="stack-badge">{{ tech | trim }}</span>
+        {%- endfor -%}
+        {%- endfor %}
+      </div>
+    </section>
 
-  <section id="technologies">
-    <h2>Technologies</h2>
-    <p>
-      {%- for skill in cv.sections.skills -%}
-        {{ skill }}{% if not loop.last %} | {% endif %}
-      {%- endfor -%}
-    </p>
-  </section>
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="badges">
+        {%- for cert in cv.sections.certifications -%}
+        {%- for item in cert.split(' | ') %}
+        <span class="cert-badge">{{ item | trim | md_link | safe }}</span>
+        {%- endfor -%}
+        {%- endfor %}
+      </div>
+    </section>
 
-  <section id="certifications">
-  <h2>Certifications</h2>
-    <p>
-      {% for cert in cv.sections.certifications %}
-      {{ cert | md_link | safe }}
-      {% endfor %}
-    </p>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
+    <section id="experience">
+      <h2>Experience</h2>
       {% for exp in cv.sections.experience %}
+      <div class="entry">
         <h3>{{ exp.position }}, {{ exp.company }}</h3>
         <h4>{{ exp.start_date }} - {{ exp.end_date }}</h4>
         <ul>
@@ -69,13 +85,14 @@
           <li class="accomplishments">{{ highlight }}</li>
           {% endfor %}
         </ul>
-        <br>
+      </div>
       {% endfor %}
-  </section>
+    </section>
 
-  <section id="volunteering">
-    <h2>Volunteering</h2>
+    <section id="volunteering">
+      <h2>Volunteering</h2>
       {% for vol in cv.sections.volunteering %}
+      <div class="entry">
         <h3>{{ vol.position }}, {{ vol.company }}</h3>
         <h4>{{ vol.start_date }} - {{ vol.end_date }}</h4>
         <ul>
@@ -83,35 +100,41 @@
           <li class="accomplishments">{{ highlight }}</li>
           {% endfor %}
         </ul>
-        <br>
+      </div>
       {% endfor %}
-  </section>
+    </section>
 
-  <section id="projects">
-    <h2>Technical Projects</h2>
-    <ul>
-      {% for project in cv.sections.projects %}
-      <li>
-        <strong>{{ project.name | md_link | safe }}</strong> <span>| {{ project.summary }}</span>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
+    <section id="projects">
+      <h2>Technical Projects</h2>
+      <ul>
+        {% for project in cv.sections.projects %}
+        <li>
+          <strong>{{ project.name | md_link | safe }}</strong> <span>| {{ project.summary }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      {% for edu in cv.sections.education %}
-      <li>
-        <h3>{{ edu.label }}</h3>
-        <h4>{{ edu.details }}</h4>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        {% for edu in cv.sections.education %}
+        <li>
+          <h3>{{ edu.label }}</h3>
+          <h4>{{ edu.details }}</h4>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </main>
 
-  <footer>
-    <p>© 2026 - Coded from scratch by {{ cv.name }}</p>
+  <footer class="statusbar">
+    <span class="mode-label">NORMAL</span>
+    <span class="branch">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-1px"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg> main
+    </span>
+    <p class="path">© 2026 - Coded from scratch by {{ cv.name }}</p>
+    <span class="scroll-pct" id="sb-scroll">0%</span>
   </footer>
 </body>
 </html>

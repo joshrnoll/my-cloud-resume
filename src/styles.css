@@ -1,173 +1,350 @@
-/* Variables */
-:root {
-  --font-color: rgb(192, 202, 245);
-  --link-color: rgb(122, 162, 247);
-  --accent-color-1: rgb(158, 206, 106);
-  --background-color: rgb(26, 27, 38);
-  --text-shadow: 5px 5px 5px rgb(0, 0, 0);
+/* Theme: matches joshrnoll.com (Tokyo Night palette + JetBrains Mono) */
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/jetbrains-mono-latin-400-normal.woff2") format("woff2");
 }
 
-/* Global Styles  */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/jetbrains-mono-latin-700-normal.woff2") format("woff2");
+}
 
-* {
+:root {
+  --bg: #1a1b26;
+  --bg-dark: #16161e;
+  --fg: #c0caf5;
+  --comment: #565f89;
+  --blue: #7aa2f7;
+  --cyan: #7dcfff;
+  --green: #9ece6a;
+  --yellow: #e0af68;
+  --orange: #ff9e64;
+  --magenta: #bb9af7;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+}
+
+/* Global */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-mono);
+  font-size: 16px;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: var(--background-color);
-  color: var(--font-color);
-  text-shadow: var(--text-shadow);
-  font-family: "Courier New", Courier, monospace;
-
-  /* uncomment below for responsive grid view */
-
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr; */
-  /* grid-template-areas: */
-  /*   "header       header" */
-  /*   "summary      experience" */
-  /*   "tech         experience" */
-  /*   "projects     experience" */
-  /*   "certs        volunteering" */
-  /*   "education    volunteering"; */
-  /* grid-auto-rows: min-content; */
-  /* align-items: start; */
-
-  padding: 20px;
-}
-
-body section {
-  margin: 0 15px 0 15px;
-  padding: 5px;
-}
-
-#summary {
-  margin-top: 15px;
-}
-
-#technologies,
-#projects {
-  margin-top: 5px;
-}
-
-body section ul,
-li {
-  margin-top: 15px;
-  list-style-type: circle;
+  min-height: 100vh;
+  padding-bottom: 4rem; /* room for the fixed status bar */
 }
 
 a {
-  color: var(--link-color);
+  color: var(--blue);
+  text-decoration: none;
 }
 
 a:hover {
-  color: var(--accent-color-1);
+  color: var(--cyan);
+  text-decoration: underline;
+}
+
+::selection {
+  background: var(--blue);
+  color: var(--bg);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Nav bar (mirrors the site's NavBar component) */
+
+.navbar {
+  background: var(--bg-dark);
+  border-bottom: 1px solid var(--comment);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.brand {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.brand:hover {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--comment);
+  font-size: 0.9rem;
+}
+
+.nav-link:hover {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: var(--cyan);
+}
+
+/* Page layout */
+
+.resume {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.resume section {
+  margin-bottom: 2.5rem;
 }
 
 h1 {
-  font-size: 48pt;
+  color: var(--fg);
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
 }
 
-/* Header */
-
-header {
-  grid-area: header;
+h2 {
+  color: var(--fg);
+  font-size: 1.4rem;
+  line-height: 1.3;
+  border-left: 3px solid var(--blue);
+  padding-left: 0.75rem;
+  margin-bottom: 1rem;
 }
 
-header button {
-  background-color: var(--link-color);
-  color: var(--background-color);
-  border: none;
-  border-radius: 5px;
-  padding: 8px;
-  width: 100px;
+h3 {
+  color: var(--fg);
+  font-size: 1.1rem;
+  line-height: 1.3;
+  border-left: 3px solid var(--magenta);
+  padding-left: 0.75rem;
 }
 
-header button:hover {
-  background-color: var(--accent-color-1);
-  cursor: pointer;
-  font-weight: bold;
-  font-style: italic;
-  box-shadow: var(--text-shadow);
+h4 {
+  color: var(--comment);
+  font-size: 0.85rem;
+  font-weight: 400;
+  padding-left: calc(0.75rem + 3px);
+  margin-top: 0.25rem;
 }
 
-/* Summary Section */
+p {
+  color: var(--fg);
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin: 0.75rem 0;
+}
+
+li {
+  margin: 0.4rem 0;
+}
+
+li::marker {
+  color: var(--comment);
+}
+
+/* Header buttons (match the site's hero CTA buttons) */
 
 .button-group {
-  display: inline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
-#pdfview {
-  display: block;
-  margin-top: 15px;
-  margin-bottom: 10px;
+.cta {
+  display: inline-block;
+  color: var(--green);
+  border: 1px solid var(--green);
+  padding: 0.4em 1em;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background 0.15s;
 }
 
-#summary {
-  grid-area: summary;
+.cta:hover {
+  background: color-mix(in srgb, var(--green) 15%, transparent);
+  color: var(--green);
+  text-decoration: none;
 }
 
-/* Technologies Section */
-
-#technologies {
-  grid-area: tech;
+.cta--pdf {
+  color: var(--blue);
+  border-color: var(--blue);
+  margin-top: 0.75rem;
 }
 
-/* Projects Section */
-
-#projects {
-  grid-area: projects;
+.cta--pdf:hover {
+  background: color-mix(in srgb, var(--blue) 15%, transparent);
+  color: var(--blue);
 }
 
-/* Certifications Section */
+/* Badges (match the site's project stack badges) */
 
-#certifications {
-  grid-area: certs;
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
-/* Education Section */
-
-#education {
-  grid-area: education;
+.stack-badge,
+.cert-badge {
+  border: 1px solid var(--comment);
+  color: var(--comment);
+  font-size: 0.8rem;
+  padding: 0.1em 0.5em;
+  border-radius: 3px;
 }
 
-/* Experience Section  */
-
-#experience {
-  grid-area: experience;
+.cert-badge {
+  border-color: var(--blue);
 }
 
-/* Volunteering Section */
-
-#volunteering {
-  grid-area: volunteering;
+.cert-badge a:hover {
+  text-decoration: none;
 }
 
-/* Footer Section  */
+.cert-badge:hover {
+  background: color-mix(in srgb, var(--blue) 15%, transparent);
+}
 
-footer {
-  background-color: var(--background-color);
-  font-size: 10pt;
+/* Experience / volunteering cards (match the site's project cards) */
+
+.entry {
+  border: 1px solid var(--comment);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.entry ul {
+  margin-bottom: 0;
+}
+
+/* Projects / education */
+
+#projects strong a {
+  color: var(--blue);
+}
+
+#projects span {
+  color: var(--fg);
+}
+
+#education ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#education li {
+  margin-bottom: 1rem;
+}
+
+/* Status bar footer (mirrors the site's Neovim-style StatusBar) */
+
+.statusbar {
   position: fixed;
   bottom: 0;
-  text-align: center;
-  width: 100%;
+  left: 0;
+  right: 0;
+  min-height: 1.75rem;
+  background: var(--bg-dark);
+  border-top: 1px solid var(--comment);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.25rem 1rem;
+  font-size: 0.8rem;
+  z-index: 200;
 }
 
-/* Styling for small screens */
+.mode-label {
+  background: var(--yellow);
+  color: var(--bg-dark);
+  font-weight: 700;
+  padding: 0 8px;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
 
-@media screen and (max-width: 1080px) {
-  body {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "header"
-      "summary"
-      "tech"
-      "projects"
-      "experience"
-      "volunteering"
-      "education"
-      "certs";
+.branch,
+.scroll-pct {
+  color: var(--comment);
+}
+
+.statusbar .path {
+  color: var(--fg);
+  flex: 1;
+}
+
+.scroll-pct {
+  margin-left: auto;
+}
+
+/* Small screens */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .entry {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .brand {
+    display: none;
+  }
+
+  .nav-links {
+    gap: 0.4rem 0.9rem;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
   }
 }
