@@ -357,7 +357,7 @@ li::marker {
 
 html.nvim-intro .nvim-wrap {
   display: block;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.25s ease;
 }
 
 .nvim-wrap.fading-out {
@@ -475,7 +475,7 @@ html.nvim-intro .md-preview {
 }
 
 .md-preview {
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease;
 }
 
 .md-preview.visible {

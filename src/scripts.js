@@ -85,7 +85,7 @@ function downloadPDF() {
     for (const ch of text) {
       if (done) return;
       el.textContent += ch;
-      await sleep(speed + Math.random() * 30);
+      await sleep(speed + Math.random() * 10);
     }
   }
 
@@ -100,33 +100,33 @@ function downloadPDF() {
   }
 
   async function run() {
-    await sleep(600);
+    await sleep(200);
     if (done) return;
 
     // gg / G, like the landing page
     setActive(lines[0]);
-    await showKeys("gg", 500);
-    await sleep(200);
-    await showKeys("G", 500);
+    await showKeys("gg", 200);
+    await sleep(60);
+    await showKeys("G", 200);
     setActive(header[header.length - 1]);
-    await sleep(300);
+    await sleep(100);
 
     for (const line of typed) {
       if (done) return;
       setActive(line);
-      await sleep(250);
-      await showKeys(line.type, line.type === "ciw" ? 500 : 300);
+      await sleep(80);
+      await showKeys(line.type, line.type === "ciw" ? 200 : 120);
       setMode("INSERT");
-      await typeText(line.lc, line.text, line.kind === "h1" ? 100 : 45);
-      await sleep(200);
+      await typeText(line.lc, line.text, line.kind === "h1" ? 25 : 14);
+      await sleep(60);
       setMode("NORMAL");
-      await sleep(350);
+      await sleep(100);
     }
     if (done) return;
 
     // `p` in NORMAL mode: paste the rest of the resume source from the
     // register below the cursor line in one go, like a real Neovim paste.
-    await showKeys("p", 400);
+    await showKeys("p", 200);
     if (done) return;
     const rest = lines.slice(header.length);
     const frag = document.createDocumentFragment();
@@ -139,7 +139,7 @@ function downloadPDF() {
     setActive(rest[0]);
     keysEl.classList.add("msg");
     keysEl.textContent = `${rest.length} more lines`;
-    await sleep(1400);
+    await sleep(600);
     keysEl.textContent = "";
     keysEl.classList.remove("msg");
     if (done) return;
@@ -147,16 +147,16 @@ function downloadPDF() {
     // gg, then :Preview
     content.scrollTop = 0;
     setActive(lines[0]);
-    await showKeys("gg", 400);
-    await sleep(500);
+    await showKeys("gg", 200);
+    await sleep(120);
     if (done) return;
     keysEl.textContent = ":Preview";
-    await sleep(700);
+    await sleep(400);
     keysEl.textContent = "";
 
     // Fade out editor, fade in rendered resume
     wrap.classList.add("fading-out");
-    await sleep(400);
+    await sleep(250);
     finish();
   }
 
