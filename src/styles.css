@@ -249,13 +249,13 @@ li::marker {
   background: color-mix(in srgb, var(--blue) 15%, transparent);
 }
 
-/* Experience / volunteering cards (match the site's project cards) */
-
+/* Experience / volunteering entries: plain, no card box */
 .entry {
-  border: 1px solid var(--comment);
-  border-radius: 6px;
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.entry:last-child {
+  margin-bottom: 0;
 }
 
 .entry ul {
@@ -328,10 +328,6 @@ li::marker {
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
-  }
-
-  .entry {
-    padding: 1rem;
   }
 }
 
