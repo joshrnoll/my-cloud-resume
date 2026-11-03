@@ -298,6 +298,7 @@ li::marker {
   padding: 0.25rem 1rem;
   font-size: 0.8rem;
   z-index: 200;
+  font-family: var(--font-mono);
 }
 
 .mode-label {
@@ -305,6 +306,9 @@ li::marker {
   color: var(--bg-dark);
   font-weight: 700;
   padding: 0 8px;
+  height: 100%;
+  display: flex;
+  align-items: center;
   font-size: 0.75rem;
   letter-spacing: 0.05em;
 }
@@ -317,6 +321,7 @@ li::marker {
 .statusbar .path {
   color: var(--fg);
   flex: 1;
+  word-break: break-all;
 }
 
 .scroll-pct {

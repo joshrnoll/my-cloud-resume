@@ -166,7 +166,9 @@ function downloadPDF() {
   run();
 })();
 
-// Status bar scroll percentage (mirrors joshrnoll.com's StatusBar)
+// Status bar path + scroll percentage (mirrors joshrnoll.com's StatusBar)
+const pathEl = document.getElementById("sb-path");
+if (pathEl) pathEl.textContent = window.location.pathname;
 const scrollEl = document.getElementById("sb-scroll");
 function updateScroll() {
   if (!scrollEl) return;
