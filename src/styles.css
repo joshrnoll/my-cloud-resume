@@ -348,3 +348,146 @@ li::marker {
     font-size: 0.8rem;
   }
 }
+
+/* Neovim intro (ported from the site's landing-page TypingAnimation) */
+
+.nvim-wrap {
+  display: none;
+}
+
+html.nvim-intro .nvim-wrap {
+  display: block;
+  transition: opacity 0.4s ease;
+}
+
+.nvim-wrap.fading-out {
+  opacity: 0;
+}
+
+.nvim-frame {
+  background: var(--bg-dark);
+  border: 1px solid var(--comment);
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 820px;
+  font-size: 0.95rem;
+}
+
+.nvim-content {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+  /* transparent borders instead of padding so scrolled lines never peek into the gutter */
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  height: calc(18 * 1.7em + 1rem);
+  overflow: hidden;
+}
+
+.nvim-line {
+  display: flex;
+  padding: 0 0.75rem;
+  line-height: 1.7;
+}
+
+.nvim-line.active {
+  background: color-mix(in srgb, var(--blue) 8%, transparent);
+}
+
+.nvim-line.active .lc::after {
+  content: "█";
+  color: var(--blue);
+  animation: nvim-blink 1s step-end infinite;
+}
+
+.ln {
+  color: var(--comment);
+  min-width: 1.75em;
+  text-align: right;
+  margin-right: 1.25em;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+/* Neovim-style `nowrap`: long lines run off the right edge */
+.lc {
+  color: var(--fg);
+  flex: 1;
+  min-width: 0;
+  min-height: 1.7em;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.lc.k-dim { color: var(--comment); }
+.lc.k-h1, .lc.k-h2 { color: var(--blue); font-weight: 700; }
+.lc.k-h3 { color: var(--magenta); }
+.lc.k-links { color: var(--cyan); }
+
+.nvim-statusbar {
+  background: color-mix(in srgb, var(--comment) 30%, var(--bg-dark));
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.8rem;
+}
+
+.nvim-mode {
+  background: var(--yellow);
+  color: var(--bg-dark);
+  font-weight: 700;
+  padding: 0 6px;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.nvim-mode.insert { background: var(--green); }
+.nvim-file { color: var(--fg); }
+.nvim-pos { color: var(--comment); margin-left: auto; }
+.nvim-keys { color: var(--orange); font-weight: 700; min-width: 3em; text-align: right; }
+
+.nvim-skip {
+  margin-top: 0.75rem;
+  background: none;
+  border: none;
+  color: var(--comment);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.nvim-skip:hover { color: var(--fg); }
+
+@keyframes nvim-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Rendered resume: hidden visually during the intro but kept in the
+   accessibility tree (no display:none / visibility:hidden). */
+html.nvim-intro .md-preview {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.md-preview {
+  transition: opacity 0.5s ease;
+}
+
+.md-preview.visible {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .nvim-frame { font-size: 0.8rem; }
+  .nvim-content { height: calc(20 * 1.7em + 1rem); }
+  .nvim-statusbar { gap: 0.6rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nvim-wrap { display: none !important; }
+  html.nvim-intro .md-preview { opacity: 1; max-height: none; }
+}

@@ -7,6 +7,15 @@
   <link rel="preload" href="./fonts/jetbrains-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./print.css" media="print">
+  <script>
+    // Play the Neovim intro only when JS runs and the visitor hasn't asked for reduced motion.
+    // Without JS (or with reduced motion) the rendered resume shows immediately.
+    try {
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('nvim-intro');
+      }
+    } catch (e) {}
+  </script>
   <script defer src="scripts.js"></script>
   <title>Josh Noll's Resume</title>
 </head>
@@ -26,6 +35,77 @@
   </nav>
 
   <main class="container resume">
+    <!-- Neovim buffer intro (mirrors the joshrnoll.com landing page). Decorative only:
+         the full resume below is always in the DOM for screen readers and crawlers. -->
+    <div class="nvim-wrap" id="nvim-wrap" aria-hidden="true">
+      <div class="nvim-frame" id="nvim-frame">
+        <div class="nvim-content" id="nvim-content"></div>
+        <div class="nvim-statusbar">
+          <span class="nvim-mode" id="nvim-mode">NORMAL</span>
+          <span class="nvim-file">resume.md</span>
+          <span class="nvim-pos" id="nvim-pos">1:1</span>
+          <span class="nvim-keys" id="nvim-keys"></span>
+        </div>
+      </div>
+      <button type="button" class="nvim-skip" id="nvim-skip" tabindex="-1">skip intro &rarr;</button>
+    </div>
+
+    <!-- Markdown source typed into the buffer, generated from resume.yaml -->
+    <template id="resume-src">
+      <div data-k="dim"># resume.md</div>
+      <div></div>
+      <div data-k="h1" data-type="ciw">## {{ cv.name }}</div>
+      <div></div>
+      <div data-k="links" data-type="i">{% for social in cv.social_networks %}[{{ social.network }}]  {% endfor %}[Website]  [PDF]</div>
+      <div></div>
+      <div data-k="h2">## Summary</div>
+      {%- for item in cv.sections.summary %}
+      <div>{{ item }}</div>
+      {%- endfor %}
+      <div></div>
+      <div data-k="h2">## Technologies</div>
+      {%- for skill in cv.sections.skills %}
+      <div>{{ skill }}</div>
+      {%- endfor %}
+      <div></div>
+      <div data-k="h2">## Certifications</div>
+      {%- for cert in cv.sections.certifications %}
+      <div>{{ cert }}</div>
+      {%- endfor %}
+      <div></div>
+      <div data-k="h2">## Experience</div>
+      {%- for exp in cv.sections.experience %}
+      <div></div>
+      <div data-k="h3">### {{ exp.position }}, {{ exp.company }}</div>
+      <div data-k="dim">_{{ exp.start_date }} - {{ exp.end_date }}_</div>
+      {%- for highlight in exp.highlights %}
+      <div data-k="li">- {{ highlight }}</div>
+      {%- endfor %}
+      {%- endfor %}
+      <div></div>
+      <div data-k="h2">## Volunteering</div>
+      {%- for vol in cv.sections.volunteering %}
+      <div></div>
+      <div data-k="h3">### {{ vol.position }}, {{ vol.company }}</div>
+      <div data-k="dim">_{{ vol.start_date }} - {{ vol.end_date }}_</div>
+      {%- for highlight in vol.highlights %}
+      <div data-k="li">- {{ highlight }}</div>
+      {%- endfor %}
+      {%- endfor %}
+      <div></div>
+      <div data-k="h2">## Technical Projects</div>
+      {%- for project in cv.sections.projects %}
+      <div data-k="li">- **{{ project.name }}** | {{ project.summary }}</div>
+      {%- endfor %}
+      <div></div>
+      <div data-k="h2">## Education</div>
+      {%- for edu in cv.sections.education %}
+      <div data-k="h3">### {{ edu.label }}</div>
+      <div>{{ edu.details }}</div>
+      {%- endfor %}
+    </template>
+
+    <div class="md-preview" id="resume-preview">
     <header>
       <section id="header">
         <h1>{{ cv.name }}</h1>
@@ -126,6 +206,7 @@
         {% endfor %}
       </ul>
     </section>
+    </div>
   </main>
 
   <footer class="statusbar">
